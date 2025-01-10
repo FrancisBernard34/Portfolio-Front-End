@@ -1,7 +1,7 @@
-export default function Projects() {
+export default function Skills() {
   return (
     <section
-      id="projects"
+      id="skills"
       className="min-h-screen bg-[#1E1E1E] text-[#D35F0C] py-20"
     >
       <div className="container mx-auto px-4">
