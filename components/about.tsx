@@ -1,0 +1,39 @@
+import Image from "next/image";
+
+export default function About() {
+  return (
+    <section
+      id="about"
+      className="min-h-screen bg-[#D35F0C] text-[#1E1E1E] py-20"
+    >
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-12 terminal-text">About_Me</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-xl mb-6 terminal-text">
+              Hello! I&apos;m a passionate full-stack developer with a love for
+              creating elegant solutions to complex problems.
+            </p>
+            <p className="text-xl mb-6 terminal-text">
+              With experience in both front-end and back-end development, I
+              enjoy building complete applications from the ground up.
+            </p>
+            <p className="text-xl terminal-text">
+              When I&apos;m not coding, you can find me exploring new technologies,
+              contributing to open source, or sharing knowledge with the
+              developer community.
+            </p>
+          </div>
+          <div className="aspect-square bg-[#1E1E1E]/10 flex items-center justify-center">
+            <Image
+              src="/profile.png"
+              alt="Profile"
+              width={600}
+              height={600}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -3,19 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --orange: #D35F0C;
+  --dark: #1E1E1E;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.torn-paper {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background: var(--dark);
+  color: var(--orange);
+  clip-path: polygon(
+    0% 15%, 
+    15% 0%, 
+    85% 5%, 
+    100% 0%, 
+    95% 100%, 
+    85% 95%, 
+    15% 100%, 
+    0% 90%
+  );
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.torn-paper-menu {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background: var(--orange);
+  color: var(--dark);
+  clip-path: polygon(
+    0% 15%, 
+    15% 0%, 
+    85% 5%, 
+    100% 0%, 
+    95% 100%, 
+    85% 95%, 
+    15% 100%, 
+    0% 90%
+  );
 }
+
+.split-bg {
+  background: linear-gradient(
+    90deg,
+    var(--orange) 0%,
+    var(--orange) 50%,
+    var(--dark) 50%,
+    var(--dark) 100%
+  );
+}
+
+.terminal-text {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.1em;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor::after {
+  content: '_';
+  animation: blink 1s infinite;
+}
+
