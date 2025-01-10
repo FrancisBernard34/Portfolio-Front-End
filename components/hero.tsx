@@ -65,11 +65,11 @@ export default function Hero() {
         className="h-full flex flex-col items-center justify-center"
         role="banner"
       >
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold terminal-text text-center px-4">
+        <h1 className="text-6xl ml-4 md:text-8xl font-bold terminal-text">
           <span className="text-[#1E1E1E]">Francis</span>
           <span className="text-[#D35F0C]"> Bernard</span>
         </h1>
-        <h2 className="flex flex-col sm:flex-row gap-4 sm:gap-20 mt-4 text-xl sm:text-2xl md:text-4xl terminal-text text-center">
+        <h2 className="flex gap-20 mt-4 mr-6 text-2xl md:text-4xl terminal-text">
           <span className="text-[#1E1E1E]">Full-Stack</span>
           <span className="text-[#D35F0C]">Developer</span>
         </h2>
