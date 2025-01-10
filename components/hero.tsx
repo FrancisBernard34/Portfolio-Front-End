@@ -27,11 +27,11 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="h-full flex flex-col items-center justify-center">
-        <h1 className="text-6xl md:text-8xl font-bold terminal-text">
+        <h1 className="text-6xl ml-4 md:text-8xl font-bold terminal-text">
           <span className="text-[#1E1E1E]">Francis</span>
           <span className="text-[#D35F0C]"> Bernard</span>
         </h1>
-        <h2 className="mt-4 text-2xl md:text-4xl terminal-text">
+        <h2 className="flex gap-20 mt-4 mr-6 text-2xl md:text-4xl terminal-text">
           <span className="text-[#1E1E1E]">Full-Stack</span>
           <span className="text-[#D35F0C]"> Developer</span>
         </h2>
