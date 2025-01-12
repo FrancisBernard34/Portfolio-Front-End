@@ -4,36 +4,34 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen bg-[#D35F0C] text-[#1E1E1E] py-20"
+      className="min-h-screen bg-[#D35F0C]/90 text-[#1E1E1E] py-20"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 terminal-text">About_Me</h2>
+        <h2 className="text-4xl font-bold mb-12 terminal-text text-white">About_Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="text-xl mb-6 terminal-text">
-              Hello! I&apos;m Francis Bernard, as you might have guessed from
-              the big flashy title above. My journey in programming began in
-              2020, exploring various domains including game development and
-              mobile applications.
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+            <p className="text-xl mb-6 terminal-text text-left">
+              Hello! I&apos;m <span className="text-[#D35F0C] font-semibold">Francis Bernard</span>, as you might have guessed from
+              the big flashy title above. My journey in <span className="text-[#D35F0C] font-semibold">programming</span> began in
+              <span className="text-[#D35F0C] font-semibold"> 2020</span>, exploring various domains including <span className="text-[#D35F0C] font-semibold">game development</span> and
+              <span className="text-[#D35F0C] font-semibold"> mobile applications</span>.
             </p>
-            <p className="text-xl mb-6 terminal-text">
-              Along the way, I discovered my passion for web development, which
+            <p className="text-xl mb-6 terminal-text text-left">
+              Along the way, I discovered my passion for <span className="text-[#D35F0C] font-semibold">web development</span>, which
               led me to specialize in this field. Now, I&apos;m a dedicated
-              full-stack developer, driven by the challenge of crafting elegant
+              <span className="text-[#D35F0C] font-semibold"> full-stack developer</span>, driven by the challenge of crafting elegant
               solutions for complex problems.
             </p>
-            <p className="text-xl mb-6 terminal-text">
-              I specialize in Next.js, TypeScript, Nest, MongoDB, and Tailwind
-              CSS to create responsive, high-performance web apps. With
-              experience in both front-end and back-end development, I enjoy
-              building complete applications from the ground up.
+            <p className="text-xl mb-6 terminal-text text-left">
+              I specialize in <span className="text-[#D35F0C] font-semibold">Next.js</span>, <span className="text-[#D35F0C] font-semibold">TypeScript</span>, <span className="text-[#D35F0C] font-semibold">Nest</span>, <span className="text-[#D35F0C] font-semibold">MongoDB</span>, and <span className="text-[#D35F0C] font-semibold">Tailwind
+              CSS</span> to create <span className="text-[#D35F0C] font-semibold">responsive</span>, <span className="text-[#D35F0C] font-semibold">high-performance web apps</span>.
             </p>
-            <p className="text-xl terminal-text">
-              When I&apos;m not coding, you can find me playing guitar, reading
-              a good book, or immersing myself in video games.
+            <p className="text-xl terminal-text text-left">
+              When I&apos;m not coding, you can find me playing <span className="text-[#D35F0C] font-semibold">guitar</span>, reading
+              a good <span className="text-[#D35F0C] font-semibold">book</span>, or immersing myself in <span className="text-[#D35F0C] font-semibold">video games</span>.
             </p>
           </div>
-          <div className="aspect-square bg-[#1E1E1E]/10 flex items-center justify-center select-none pointer-events-none">
+          <div className="aspect-square bg-white/10 rounded-xl flex items-center justify-center select-none pointer-events-none">
             <Image src="/profile.png" alt="Profile" width={600} height={600} />
           </div>
         </div>
