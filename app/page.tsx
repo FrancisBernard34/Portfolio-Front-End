@@ -4,6 +4,7 @@ import About from '@/components/about'
 import Skills from '@/components/skills'
 import Contact from '@/components/contact'
 import BackToTop from '@/components/back-to-top'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Skills />
       <Contact />
+      <Footer />
       <BackToTop />
     </main>
   )

@@ -8,10 +8,10 @@ import {
   SiTailwindcss,
   SiReact,
   SiNodedotjs,
-  SiPrisma,
   SiPostgresql,
   SiGit,
   SiDocker,
+  SiExpo,
 } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 
@@ -63,9 +63,9 @@ const skills: Skill[] = [
     description: "Framework for building native mobile applications",
   },
   {
-    name: "Prisma",
-    icon: <SiPrisma className="w-12 h-12 text-[#D35F0C]" />,
-    description: "Next-generation Node.js and TypeScript ORM",
+    name: "Expo",
+    icon: <SiExpo className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Platform for universal React applications",
   },
   {
     name: "PostgreSQL",
@@ -88,7 +88,7 @@ export default function Skills() {
   return (
     <section id="skills" className="min-h-screen bg-[#1E1E1E] text-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 terminal-text">Skills</h2>
+        <h2 className="text-4xl font-bold mb-12 terminal-text">Skills_</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <div
