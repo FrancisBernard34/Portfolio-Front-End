@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import Link from "next/link";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -103,6 +104,14 @@ export default function Skills() {
               <p className="text-gray-400">{skill.description}</p>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
+          <Link
+            href="/skills"
+            className="bg-[#D35F0C] text-white px-8 py-3 rounded-lg hover:bg-[#D35F0C]/90 transition-colors duration-300 font-semibold text-lg"
+          >
+            See All Skills →
+          </Link>
         </div>
       </div>
     </section>

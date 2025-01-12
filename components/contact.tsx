@@ -5,7 +5,7 @@ export default function Contact() {
       className="min-h-screen bg-[#D35F0C] text-[#1E1E1E] py-20"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 terminal-text">Contact_Me</h2>
+        <h2 className="text-4xl font-bold mb-12 terminal-text text-white">Contact_Me</h2>
         <div className="max-w-2xl mx-auto">
           <form className="space-y-6">
             <div>
