@@ -42,6 +42,9 @@ import {
   SiGodotengine,
   SiUnity,
   SiFlask,
+  SiAdobexd,
+  SiFlutter,
+  SiWordpress,
 } from "react-icons/si";
 import { DiJava, DiReact } from "react-icons/di";
 import { TbBrandCSharp, TbBrandFramerMotion } from "react-icons/tb";
@@ -52,7 +55,7 @@ interface Skill {
   name: string;
   icon: React.ReactElement;
   description: string;
-  category: "Frontend" | "Backend" | "Database" | "DevOps" | "Design" | "Other";
+  category: "Frontend" | "Backend" | "Database" | "DevOps" | "Design" | "Testing" | "Game Engines";
 }
 
 const allSkills: Skill[] = [
@@ -139,6 +142,24 @@ const allSkills: Skill[] = [
     name: "Bootstrap",
     icon: <SiBootstrap className="w-12 h-12 text-[#D35F0C]" />,
     description: "Popular CSS framework",
+    category: "Frontend",
+  },
+  {
+    name: "Axios",
+    icon: <SiAxios className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Promise-based HTTP client",
+    category: "Frontend",
+  },
+  {
+    name: "Flutter",
+    icon: <SiFlutter className="w-12 h-12 text-[#D35F0C]" />,
+    description: "UI toolkit for building natively compiled applications",
+    category: "Frontend",
+  },
+  {
+    name: "WordPress",
+    icon: <SiWordpress className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Content management system for web development",
     category: "Frontend",
   },
 
@@ -317,48 +338,58 @@ const allSkills: Skill[] = [
     description: "Motion graphics and visual effects software",
     category: "Design",
   },
-
-  // Other
   {
-    name: "Postman",
-    icon: <SiPostman className="w-12 h-12 text-[#D35F0C]" />,
-    description: "API development and testing platform",
-    category: "Other",
+    name: "Adobe XD",
+    icon: <SiAdobexd className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Vector-based user experience design tool",
+    category: "Design",
+  },
+
+  // Testing
+  {
+    name: "Jest",
+    icon: <SiJest className="w-12 h-12 text-[#D35F0C]" />,
+    description: "JavaScript testing framework",
+    category: "Testing",
   },
   {
     name: "Insomnia",
     icon: <SiInsomnia className="w-12 h-12 text-[#D35F0C]" />,
     description: "REST and GraphQL API client",
-    category: "Other",
+    category: "Testing",
   },
   {
-    name: "Jest",
-    icon: <SiJest className="w-12 h-12 text-[#D35F0C]" />,
-    description: "JavaScript testing framework",
-    category: "Other",
+    name: "Postman",
+    icon: <SiPostman className="w-12 h-12 text-[#D35F0C]" />,
+    description: "API development and testing platform",
+    category: "Testing",
   },
+
+  // Game Engines
   {
-    name: "Axios",
-    icon: <SiAxios className="w-12 h-12 text-[#D35F0C]" />,
-    description: "Promise-based HTTP client",
-    category: "Other",
+    name: "Unity",
+    icon: <SiUnity className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Cross-platform game engine",
+    category: "Game Engines",
   },
   {
     name: "Godot",
     icon: <SiGodotengine className="w-12 h-12 text-[#D35F0C]" />,
     description: "Open-source game engine",
-    category: "Other",
-  },
-  {
-    name: "Unity",
-    icon: <SiUnity className="w-12 h-12 text-[#D35F0C]" />,
-    description: "Cross-platform game engine",
-    category: "Other",
+    category: "Game Engines",
   },
 ];
 
 export default function SkillsPage() {
-  const categories = ["Frontend", "Backend", "Database", "DevOps", "Design", "Other"];
+  const categories = [
+    "Frontend",
+    "Backend",
+    "Database",
+    "DevOps",
+    "Design",
+    "Testing",
+    "Game Engines",
+  ];
 
   return (
     <main className="min-h-screen bg-[#1E1E1E] text-white py-20">

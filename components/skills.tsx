@@ -8,12 +8,12 @@ import {
   SiTailwindcss,
   SiReact,
   SiNodedotjs,
-  SiExpress,
   SiPrisma,
   SiPostgresql,
   SiGit,
   SiDocker,
 } from "react-icons/si";
+import { DiReact } from "react-icons/di";
 
 interface Skill {
   name: string;
@@ -58,9 +58,9 @@ const skills: Skill[] = [
     description: "JavaScript runtime for server-side development",
   },
   {
-    name: "Express",
-    icon: <SiExpress className="w-12 h-12 text-[#D35F0C]" />,
-    description: "Fast, unopinionated web framework for Node.js",
+    name: "React Native",
+    icon: <DiReact className="w-12 h-12 text-[#D35F0C]" />,
+    description: "Framework for building native mobile applications",
   },
   {
     name: "Prisma",
