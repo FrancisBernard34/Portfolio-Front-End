@@ -146,7 +146,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="absolute top-8 left-8">
           <div className="torn-paper select-none">
-            <span className="text-xl font-bold bright-glow" aria-label="Francis Bernard Logo">
+            <span className="text-xl font-medium text-white bright-glow" aria-label="Francis Bernard Logo">
               &lt;FB&gt;
             </span>
           </div>
@@ -250,7 +250,7 @@ export default function Hero() {
               aria-label="Close menu"
             >
               <div className="torn-paper p-2">
-                <X size={28} className="text-[#D35F0C]" />
+                <X size={28} className="text-light_orange" />
               </div>
             </button>
             <ul className="space-y-8 text-center">

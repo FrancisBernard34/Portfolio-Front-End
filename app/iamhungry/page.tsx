@@ -134,22 +134,7 @@ export default function HungryPage() {
           <div
             className="absolute inset-0 opacity-15"
             style={{
-              background: `
-                repeating-linear-gradient(
-                  ${tear.rotation + 45}deg,
-                  #000,
-                  #000 1px,
-                  transparent 1px,
-                  transparent 3px
-                ),
-                repeating-linear-gradient(
-                  ${tear.rotation - 45}deg,
-                  #000,
-                  #000 1px,
-                  transparent 1px,
-                  transparent 3px
-                )
-              `,
+              background: 'white',
               transform: `rotate(${tear.rotation}deg)`,
               clipPath: createTornShape(tear),
             }}

@@ -26,14 +26,14 @@
 }
 
 .bright-glow {
-  text-shadow: 0 0 20px rgba(255, 132, 0, 1);
+  text-shadow: 0 0 10px rgba(255, 132, 0, 0.9);
 }
 
 .torn-paper-menu {
   position: relative;
   padding: 0.5rem 1rem;
   background: var(--light_orange);
-  color: var(--dark);
+  color: white;
   clip-path: polygon(
     0% 15%,
     15% 0%,
