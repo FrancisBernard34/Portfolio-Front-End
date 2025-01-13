@@ -1,12 +1,16 @@
+'use client';
+
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
 
   return (
-    <footer className="w-full bg-[#1E1E1E] text-white py-12">
+    <footer id="footer" className="w-full bg-[#1E1E1E] text-white py-12">
       <div className="w-full flex flex-col justify-center items-center gap-12 px-4">
         <div className="w-[90%] md:w-[70%] flex flex-col md:flex-row justify-around items-center gap-24 md:gap-12">
           {/* Bonus Section */}
@@ -19,6 +23,7 @@ export default function Footer() {
                 Eat_the_portfolio!
               </p>
               <button
+                onClick={() => router.push('/iamhungry')}
                 className="px-6 py-2 bg-[#D35F0C] text-white terminal-text rounded-lg hover:bg-[#D35F0C]/80 transition-colors cursor"
                 aria-label="Play the game"
               >
