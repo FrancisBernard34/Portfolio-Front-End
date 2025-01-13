@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 type NavItem = {
   href: string;
@@ -36,8 +37,98 @@ export default function Hero() {
     }
   };
 
+  // Animation variants for the text
+  const textVariants = {
+    hidden: { 
+      opacity: 0,
+      y: 20,
+      filter: "blur(10px)"
+    },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.8,
+        delay: i * 0.1,
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    }),
+  };
+
+  // Animation variants for the torn paper background
+  const paperVariants = {
+    hidden: { 
+      opacity: 0,
+      scale: 1.5,
+      z: -100,
+      rotateX: 45,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      z: 0,
+      rotateX: 0,
+      transition: {
+        duration: 0.4,
+        delay: 1.6,
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    },
+  };
+
+  // Animation variants for the subtitle
+  const subtitleVariants = {
+    hidden: { 
+      opacity: 0,
+      y: 30,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delay: 2, // Start after the name animation
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    },
+  };
+
+  // Animation variants for the button
+  const buttonVariants = {
+    hidden: { 
+      opacity: 0,
+      y: 30,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delay: 2.3, // Start after subtitle animation
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    },
+  };
+
+  // Split text into characters for animation
+  const createTextSpans = (text: string, startIndex: number) => {
+    return text.split('').map((char, index) => (
+      <motion.span
+        key={index}
+        custom={startIndex + index}
+        variants={textVariants}
+        initial="hidden"
+        animate="visible"
+        className="inline-block"
+      >
+        {char}
+      </motion.span>
+    ));
+  };
+
   return (
-    <section className="h-screen relative split-bg" aria-label="Hero section">
+    <section className="h-screen relative split-bg perspective-1000 overflow-hidden" aria-label="Hero section">
       {/* Logo */}
       <div className="absolute top-8 left-8">
         <div className="torn-paper select-none">
@@ -62,24 +153,65 @@ export default function Hero() {
 
       {/* Main Content */}
       <div
-        className="h-full flex flex-col items-center justify-center"
+        className="h-full flex flex-col items-center justify-center relative"
         role="banner"
       >
-        <h1 className="text-6xl ml-4 md:text-8xl font-bold terminal-text">
-          <span className="text-[#1E1E1E]">Francis</span>
-          <span className="text-light_orange"> Bernard</span>
-        </h1>
-        <h2 className="flex gap-20 mt-4 mr-6 text-2xl md:text-4xl terminal-text">
-          <span className="text-[#1E1E1E]">Full-Stack</span>
-          <span className="text-light_orange">Developer</span>
-        </h2>
-        <button
+        <div className="relative preserve-3d w-full max-w-[65rem] mx-auto">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={paperVariants}
+            className="absolute inset-0 bg-white/90 transform-gpu rounded-lg shadow-lg mx-4"
+            style={{ 
+              padding: '1rem 2rem',
+              transformStyle: 'preserve-3d',
+              backfaceVisibility: 'hidden',
+            }}
+          />
+          <div className="grid grid-cols-2 gap-2">
+            <div className="flex justify-end pr-2">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold terminal-text">
+                <span className="text-[#1E1E1E] inline-flex">
+                  {createTextSpans("Francis", 0)}
+                </span>
+              </h1>
+            </div>
+            <div className="flex justify-start pl-2 translate-x-[2%]">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold terminal-text">
+                <span className="text-light_orange inline-flex">
+                  {createTextSpans("Bernard", 7)}
+                </span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <motion.div 
+          className="grid grid-cols-2 gap-0 w-full max-w-5xl mt-8"
+          variants={subtitleVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="flex justify-end pr-8">
+            <h2 className="text-2xl md:text-4xl terminal-text">
+              <span className="text-[#1E1E1E]">Full-Stack</span>
+            </h2>
+          </div>
+          <div className="flex justify-start pl-8">
+            <h2 className="text-2xl md:text-4xl terminal-text">
+              <span className="text-light_orange">Developer</span>
+            </h2>
+          </div>
+        </motion.div>
+        <motion.button
           className="mt-12 px-8 py-4 bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 transition-colors terminal-text text-[#1E1E1E] text-xl cursor focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-lg"
           onClick={() => handleNavClick("#projects")}
           aria-label="View projects"
+          variants={buttonVariants}
+          initial="hidden"
+          animate="visible"
         >
           Press Start
-        </button>
+        </motion.button>
       </div>
 
       {/* Navigation Menu */}
