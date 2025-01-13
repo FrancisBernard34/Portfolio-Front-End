@@ -183,16 +183,16 @@ export default function Hero() {
                 bottom: '-0.5rem'
               }}
             />
-            <div className="grid grid-cols-2 gap-2 max-[560px]:grid-cols-1 max-[560px]:gap-0 px-4">
-              <div className="flex justify-end pr-2 max-[560px]:justify-center max-[560px]:pr-0">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl max-[560px]:text-4xl font-bold terminal-text">
+            <div className="grid grid-cols-2 gap-2 px-4">
+              <div className="flex justify-end pr-2 ">
+                <h1 className="text-3xl sm-min:text-4xl sm:text-5xl sm-max:text-6xl md:text-7xl lg:text-8xl font-bold terminal-text">
                   <span className="text-[#292929] inline-flex">
                     {createTextSpans("Francis", 0)}
                   </span>
                 </h1>
               </div>
               <div className="flex justify-start pl-2 translate-x-[2%] max-[560px]:justify-center max-[560px]:pl-0 max-[560px]:translate-x-0">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl max-[560px]:text-4xl font-bold terminal-text">
+                <h1 className="text-3xl sm-min:text-4xl sm:text-5xl sm-max:text-6xl md:text-7xl lg:text-8xl font-bold terminal-text">
                   <span className="text-light_orange inline-flex">
                     {createTextSpans("Bernard", 7)}
                   </span>
