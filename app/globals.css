@@ -26,7 +26,7 @@
 }
 
 .bright-glow {
-  text-shadow: 0 0 10px rgba(255, 132, 0, 1), 0 0 80px rgba(255, 128, 0, 1);
+  text-shadow: 0 0 20px rgba(255, 132, 0, 1);
 }
 
 .torn-paper-menu {

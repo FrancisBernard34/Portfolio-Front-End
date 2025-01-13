@@ -37,7 +37,7 @@ export default function About() {
             </p>
           </div>
           <div className="aspect-square bg-white/10 rounded-xl flex items-center justify-center select-none pointer-events-none">
-            <Image src="/profile.png" alt="Profile" width={600} height={600} />
+            <Image src="/profile.png" alt="Profile" width={600} height={600} priority />
           </div>
         </div>
       </div>
