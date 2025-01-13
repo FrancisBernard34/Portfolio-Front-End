@@ -9,7 +9,6 @@ import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 
-// Add type declaration for webkit prefix
 declare global {
   interface Window {
     webkitAudioContext: typeof AudioContext;
@@ -30,7 +29,7 @@ export default function HungryPage() {
   const router = useRouter();
 
   const generateIrregularities = useCallback(() => {
-    return Array.from({ length: 8 }, () => Math.random() * 30 - 15);
+    return Array.from({ length: 16 }, () => Math.random() * 30 - 15);
   }, []);
 
   const handleTear = (e: React.MouseEvent) => {
@@ -48,7 +47,6 @@ export default function HungryPage() {
 
     setTornSpots(prev => [...prev, newTear]);
 
-    // Create new audio context for each tear
     const ctx = new (window.AudioContext || 
       window.webkitAudioContext || 
       (function() { throw new Error('AudioContext not supported'); })()
@@ -84,21 +82,33 @@ export default function HungryPage() {
 
   const createTornShape = (tear: TornSpot) => {
     const { irregularity } = tear;
-    return `polygon(
-      ${20 + irregularity[0]}% ${0 + irregularity[1]}%,
-      ${80 + irregularity[2]}% ${0 + irregularity[3]}%,
-      ${100 + irregularity[4]}% ${20 + irregularity[5]}%,
-      ${100 + irregularity[6]}% ${80 + irregularity[7]}%,
-      ${80 - irregularity[0]}% ${100 - irregularity[1]}%,
-      ${20 - irregularity[2]}% ${100 - irregularity[3]}%,
-      ${0 - irregularity[4]}% ${80 - irregularity[5]}%,
-      ${0 - irregularity[6]}% ${20 - irregularity[7]}%
-    )`;
+    const points = [
+      // Top edge (3 points)
+      [20 + irregularity[0], 0 + irregularity[1]],
+      [50 + irregularity[2], 0 + irregularity[3]],
+      [80 + irregularity[4], 0 + irregularity[5]],
+      
+      // Right edge (3 points)
+      [100 + irregularity[6], 20 + irregularity[7]],
+      [100 + irregularity[8], 50 + irregularity[9]],
+      [100 + irregularity[10], 80 + irregularity[11]],
+      
+      // Bottom edge (3 points)
+      [80 + irregularity[12], 100 + irregularity[13]],
+      [50 + irregularity[14], 100 + irregularity[15]],
+      [20 - irregularity[0], 100 - irregularity[1]],
+      
+      // Left edge (3 points)
+      [0 - irregularity[2], 80 - irregularity[3]],
+      [0 - irregularity[4], 50 - irregularity[5]],
+      [0 - irregularity[6], 20 - irregularity[7]],
+    ];
+
+    return `polygon(${points.map(([x, y]) => `${x}% ${y}%`).join(', ')})`;
   };
 
   return (
     <main className="relative min-h-screen overflow-x-hidden cursor-pointer" onClick={handleTear}>
-      {/* Torn Paper Overlay */}
       {tornSpots.map((tear) => (
         <div
           key={tear.id}
@@ -147,10 +157,8 @@ export default function HungryPage() {
         </div>
       ))}
 
-      {/* Page Content */}
       {pageContent}
 
-      {/* Satisfied Button */}
       <button
         onClick={handleSatisfied}
         className="fixed bottom-6 right-6 z-[9999] px-6 py-3 bg-[#D35F0C] text-white terminal-text rounded-lg hover:bg-[#D35F0C]/80 transition-colors cursor"

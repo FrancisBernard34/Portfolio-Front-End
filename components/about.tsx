@@ -9,7 +9,12 @@ export default function About() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 terminal-text text-white">About_Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center selection:bg-gray-300">
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg relative overflow-hidden">
+            {/* Floating Circles */}
+            <div className="floating-circle floating-circle-1 top-[-20px] left-[-20px]" />
+            <div className="floating-circle floating-circle-2 bottom-[-40px] right-[450px]" />
+            <div className="floating-circle floating-circle-3 top-[40%] left-[60%]" />
+
             <p className="text-xl mb-6 terminal-text text-left">
               Hello! I&apos;m <span className="text-[#D35F0C] font-semibold">Francis Bernard</span>, as you might have guessed from
               the big flashy title above. My journey in <span className="text-[#D35F0C] font-semibold">programming</span> began in
