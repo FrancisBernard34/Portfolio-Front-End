@@ -14,6 +14,10 @@ export default {
         orange: "var(--orange)",
         light_orange: "rgba(211, 95, 12, 0.9)"
       },
+      screens: {
+        'sm': '560px',
+        'lg': '1070px',
+      },
     },
   },
   plugins: [],

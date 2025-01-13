@@ -156,28 +156,30 @@ export default function Hero() {
         className="h-full flex flex-col items-center justify-center relative"
         role="banner"
       >
-        <div className="relative preserve-3d w-full max-w-[65rem] mx-auto">
+        <div className="relative preserve-3d w-fit lg:w-full max-w-[65rem] mx-auto px-4">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={paperVariants}
-            className="absolute inset-0 bg-white/90 transform-gpu rounded-lg shadow-lg mx-4"
+            className="absolute inset-x-4 bg-white/90 transform-gpu rounded-lg shadow-lg w-auto"
             style={{ 
-              padding: '1rem 2rem',
+              padding: '0.75rem 1.5rem',
               transformStyle: 'preserve-3d',
               backfaceVisibility: 'hidden',
+              top: '-0.5rem',
+              bottom: '-0.5rem'
             }}
           />
-          <div className="grid grid-cols-2 gap-2">
-            <div className="flex justify-end pr-2">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold terminal-text">
-                <span className="text-[#1E1E1E] inline-flex">
+          <div className="grid grid-cols-2 gap-2 max-[560px]:grid-cols-1 max-[560px]:gap-0 px-4">
+            <div className="flex justify-end pr-2 max-[560px]:justify-center max-[560px]:pr-0">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl max-[560px]:text-4xl font-bold terminal-text">
+                <span className="text-[#292929] inline-flex">
                   {createTextSpans("Francis", 0)}
                 </span>
               </h1>
             </div>
-            <div className="flex justify-start pl-2 translate-x-[2%]">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold terminal-text">
+            <div className="flex justify-start pl-2 translate-x-[2%] max-[560px]:justify-center max-[560px]:pl-0 max-[560px]:translate-x-0">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl max-[560px]:text-4xl font-bold terminal-text">
                 <span className="text-light_orange inline-flex">
                   {createTextSpans("Bernard", 7)}
                 </span>
@@ -193,7 +195,7 @@ export default function Hero() {
         >
           <div className="flex justify-end pr-8">
             <h2 className="text-2xl md:text-4xl terminal-text">
-              <span className="text-[#1E1E1E]">Full-Stack</span>
+              <span className="text-[#292929]">Full-Stack</span>
             </h2>
           </div>
           <div className="flex justify-start pl-8">
