@@ -108,7 +108,7 @@ export default function HungryPage() {
   };
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden cursor-pointer" onClick={handleTear}>
+    <main className="relative min-h-screen overflow-hidden cursor-pointer" onClick={handleTear}>
       {tornSpots.map((tear) => (
         <div
           key={tear.id}
