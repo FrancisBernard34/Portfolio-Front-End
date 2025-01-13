@@ -41,7 +41,7 @@ export default function Hero() {
       {/* Logo */}
       <div className="absolute top-8 left-8">
         <div className="torn-paper select-none">
-          <span className="text-xl font-bold" aria-label="Francis Bernard Logo">
+          <span className="text-xl font-bold bright-glow" aria-label="Francis Bernard Logo">
             &lt;FB&gt;
           </span>
         </div>
@@ -67,11 +67,11 @@ export default function Hero() {
       >
         <h1 className="text-6xl ml-4 md:text-8xl font-bold terminal-text">
           <span className="text-[#1E1E1E]">Francis</span>
-          <span className="text-[#D35F0C]"> Bernard</span>
+          <span className="text-light_orange"> Bernard</span>
         </h1>
         <h2 className="flex gap-20 mt-4 mr-6 text-2xl md:text-4xl terminal-text">
           <span className="text-[#1E1E1E]">Full-Stack</span>
-          <span className="text-[#D35F0C]">Developer</span>
+          <span className="text-light_orange">Developer</span>
         </h2>
         <button
           className="mt-12 px-8 py-4 bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 transition-colors terminal-text text-[#1E1E1E] text-xl cursor focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-lg"

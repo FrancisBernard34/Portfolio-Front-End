@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        orange: "var(--orange)",
+        light_orange: "rgba(211, 95, 12, 0.9)"
       },
     },
   },

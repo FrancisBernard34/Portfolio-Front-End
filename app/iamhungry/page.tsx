@@ -72,9 +72,9 @@ export default function HungryPage() {
   const pageContent = (
     <div className="relative z-0 pointer-events-none select-none">
       <Hero />
+      <Projects />
       <About />
       <Skills />
-      <Projects />
       <Contact />
       <Footer />
     </div>

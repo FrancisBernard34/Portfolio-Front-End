@@ -13,7 +13,7 @@ export default function About() {
             {/* Floating Circles */}
             <div className="floating-circle floating-circle-1 top-[-20px] left-[-20px]" />
             <div className="floating-circle floating-circle-2 bottom-[-40px] right-[450px]" />
-            <div className="floating-circle floating-circle-3 top-[40%] left-[60%]" />
+            <div className="floating-circle floating-circle-3 top-[40%] left-[70%]" />
 
             <p className="text-xl mb-6 terminal-text text-left">
               Hello! I&apos;m <span className="text-[#D35F0C] font-semibold">Francis Bernard</span>, as you might have guessed from
