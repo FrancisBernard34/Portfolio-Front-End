@@ -12,7 +12,7 @@ export default function Contact() {
           <div className="floating-circle floating-circle-2 bottom-[-30px] right-[-20px]" />
           <div className="floating-circle floating-circle-3 top-[40%] left-[60%]" />
           
-          <div className="max-w-2xl mx-auto relative z-10">
+          <div className="max-w-2xl mx-auto relative z-10 selection:bg-black/30">
             <form className="space-y-6">
               <div>
               <label

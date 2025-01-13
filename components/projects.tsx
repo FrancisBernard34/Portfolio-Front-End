@@ -5,7 +5,7 @@ export default function Projects() {
       className="min-h-screen bg-[#1E1E1E] text-[#D35F0C] py-20"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 terminal-text">Projects_</h2>
+        <h2 className="text-4xl font-bold mb-12 terminal-text text-white">Projects_</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[1, 2, 3, 4].map((project) => (
             <div

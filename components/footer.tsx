@@ -126,7 +126,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-white/10 text-center">
           <p className="text-sm text-white/60 terminal-text">
-            &copy; {currentYear} Portfolio. Made_With_Love_By_Francis_Bernard
+            &copy; {currentYear} Portfolio. Francis_Bernard
           </p>
         </div>
       </div>

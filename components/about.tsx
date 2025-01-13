@@ -8,7 +8,7 @@ export default function About() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 terminal-text text-white">About_Me</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center selection:bg-gray-300">
           <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg">
             <p className="text-xl mb-6 terminal-text text-left">
               Hello! I&apos;m <span className="text-[#D35F0C] font-semibold">Francis Bernard</span>, as you might have guessed from
