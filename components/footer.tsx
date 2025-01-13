@@ -27,7 +27,7 @@ export default function Footer() {
                 className="px-6 py-2 bg-[#D35F0C] text-white terminal-text rounded-lg hover:bg-[#D35F0C]/80 transition-colors cursor"
                 aria-label="Play the game"
               >
-                Play_
+                Play
               </button>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function Footer() {
               </h4>
               <div className="space-y-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/FrancisBernard34"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-white/80 hover:text-[#D35F0C] transition-colors terminal-text"
@@ -102,7 +102,7 @@ export default function Footer() {
                   GitHub_
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/francis-bernard-dev/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-white/80 hover:text-[#D35F0C] transition-colors terminal-text"
@@ -113,7 +113,7 @@ export default function Footer() {
                   LinkedIn_
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:francisbernardcontato@gmail.com"
                   className="flex items-center gap-2 text-sm text-white/80 hover:text-[#D35F0C] transition-colors terminal-text"
                   tabIndex={0}
                   aria-label="Send me an email"
