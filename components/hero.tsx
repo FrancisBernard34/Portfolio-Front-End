@@ -168,7 +168,7 @@ export default function Hero() {
         )}
 
         {/* Main Content */}
-        <div className="h-full flex flex-col items-center justify-center relative" role="banner">
+        <div className="h-full flex flex-col items-center justify-center relative pb-12 sm-min:pb-0" role="banner">
           <div className="relative preserve-3d w-fit lg:w-full max-w-[65rem] mx-auto px-4">
             <motion.div
               initial="hidden"
@@ -191,7 +191,7 @@ export default function Hero() {
                   </span>
                 </h1>
               </div>
-              <div className="flex justify-start pl-2 translate-x-[2%] max-[560px]:justify-center max-[560px]:pl-0 max-[560px]:translate-x-0">
+              <div className="flex justify-start pl-2 translate-x-[2%] max-[560px]:justify-center max-[560px]:pl-0">
                 <h1 className="text-3xl sm-min:text-4xl sm:text-5xl sm-max:text-6xl md:text-7xl lg:text-8xl font-bold terminal-text">
                   <span className="text-light_orange inline-flex">
                     {createTextSpans("Bernard", 7)}
@@ -206,19 +206,19 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
           >
-            <div className="flex justify-end pr-8">
-              <h2 className="text-2xl md:text-4xl terminal-text">
+            <div className="flex justify-end pr-4 sm-min:pr-6 sm:pr-8">
+              <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
                 <span className="text-[#292929]">Full-Stack</span>
               </h2>
             </div>
-            <div className="flex justify-start pl-8">
-              <h2 className="text-2xl md:text-4xl terminal-text">
+            <div className="flex justify-start pl-4 sm-min:pl-6 sm:pl-8">
+              <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
                 <span className="text-light_orange">Developer</span>
               </h2>
             </div>
           </motion.div>
           <motion.button
-            className="mt-12 px-8 py-4 bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 transition-colors terminal-text text-[#1E1E1E] text-xl cursor focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-lg"
+            className="mt-12 px-3 sm-min:px-4 sm:px-8 py-3 sm:py-4 bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 transition-colors terminal-text text-[#1E1E1E] text-base sm-min:text-lg sm:text-xl cursor focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-lg"
             onClick={() => handleNavClick("#projects")}
             aria-label="View projects"
             variants={buttonVariants}

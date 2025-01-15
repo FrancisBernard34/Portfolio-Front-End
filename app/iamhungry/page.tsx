@@ -40,10 +40,8 @@ export default function HungryPage() {
     const randomness = Math.random() * 2 + 0.7
     if (randomness >= 1.4 && randomness <= 2.3) {
       scale = randomness
-      console.log('scale', scale)
     } else {
       scale = (1.7 + 2.3) / 2
-      console.log('scale', scale)
     }
 
     const newTear: TornSpot = {

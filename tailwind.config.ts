@@ -20,6 +20,7 @@ export default {
         'sm-max': '680px',
         'md': '820px',
         'lg': '1070px',
+        'lg-max': '1150px',
       },
     },
   },
