@@ -393,14 +393,14 @@ export default function SkillsPage() {
 
   return (
     <main className="min-h-screen bg-[#1E1E1E] text-white py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 sm-min:px-4">
         <div className="flex items-center justify-between mb-12">
-          <h1 className="text-4xl font-bold terminal-text">All_Skills</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold terminal-text">All_Skills</h1>
           <Link
             href="/#skills"
-            className="text-[#D35F0C] hover:text-[#D35F0C]/80 transition-colors"
+            className="text-[#D35F0C] hover:text-[#D35F0C]/80 text-base sm:text-lg transition-colors"
           >
-            ← Back to Home
+            ← Back
           </Link>
         </div>
 
