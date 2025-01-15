@@ -87,7 +87,7 @@ const skills: Skill[] = [
 export default function Skills() {
   return (
     <section id="skills" className="min-h-screen bg-[#1E1E1E] text-white py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 sm-min:px-4">
         <h2 className="text-4xl font-bold mb-12 terminal-text">Skills_</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
