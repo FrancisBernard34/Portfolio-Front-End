@@ -6,7 +6,7 @@ export interface Project {
     imageUrl: string
     liveUrl: string
     githubUrl: string
-    features: boolean
+    featured: boolean
     importance: number
     category: string
     createdAt: Date
