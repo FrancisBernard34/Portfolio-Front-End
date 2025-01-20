@@ -87,7 +87,7 @@ export default function LoginPage() {
 
       <Link
         href="/"
-        className="absolute top-8 left-8 text-white/80 hover:text-[#D35F0C] transition-colors flex items-center gap-2 terminal-text"
+        className="absolute top-8 left-8 text-white/80 hover:text-[#f47e00] transition-colors flex items-center gap-2 terminal-text"
         tabIndex={0}
         aria-label="Go back to home"
       >
@@ -102,7 +102,7 @@ export default function LoginPage() {
         className="w-full max-w-md"
       >
         <div className="torn-paper mb-8 text-center">
-          <h1 className="text-3xl font-bold terminal-text">Login_</h1>
+          <h1 className="text-3xl font-bold terminal-text text-[#f47e00]">Login_</h1>
         </div>
 
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg relative overflow-hidden">
@@ -117,7 +117,7 @@ export default function LoginPage() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-base mb-2 terminal-text text-[#1E1E1E]"
+                className="block text-base mb-2 terminal-text text-[#d46d00]"
               >
                 Email_
               </label>
@@ -126,7 +126,7 @@ export default function LoginPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full p-4 text-base rounded-xl bg-[#D35F0C]/30 text-[#1E1E1E] terminal-text focus:outline-none focus:ring-2 focus:ring-[#D35F0C] placeholder:text-[#636262]"
+                className="w-full p-4 text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none focus:ring-2 focus:ring-[#f47e00] placeholder:text-[#636262]"
                 placeholder="Enter your email"
                 aria-describedby={state?.errors?.email ? "email-error" : undefined}
               />
@@ -140,7 +140,7 @@ export default function LoginPage() {
             <div>
               <label
                 htmlFor="password"
-                className="block text-base mb-2 terminal-text text-[#1E1E1E]"
+                className="block text-base mb-2 terminal-text text-[#d46d00]"
               >
                 Password_
               </label>
@@ -149,7 +149,7 @@ export default function LoginPage() {
                 id="password"
                 name="password"
                 required
-                className="w-full p-4 text-base rounded-xl bg-[#D35F0C]/30 text-[#1E1E1E] terminal-text focus:outline-none focus:ring-2 focus:ring-[#D35F0C] placeholder:text-[#636262]"
+                className="w-full p-4 text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none focus:ring-2 focus:ring-[#f47e00] placeholder:text-[#636262]"
                 placeholder="Enter your password"
                 aria-describedby={state?.errors?.password ? "password-error" : undefined}
               />

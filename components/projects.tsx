@@ -26,7 +26,12 @@ export default function Projects() {
 
   const categories = [
     "all",
-    ...new Set(projects.map((project) => project.category)),
+    "DEFAULT",
+    ...new Set(
+      projects
+        .map((project) => project.category)
+        .filter((category) => category !== "DEFAULT")
+    ),
   ];
 
   const filteredProjects =
