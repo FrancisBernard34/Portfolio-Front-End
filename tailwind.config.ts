@@ -21,6 +21,7 @@ export default {
         'md': '820px',
         'lg': '1070px',
         'lg-max': '1150px',
+        '3xl': '1720px'
       },
     },
   },

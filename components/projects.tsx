@@ -17,7 +17,8 @@ export default function Projects() {
       const sortedData = data.sort(
         (a, b) =>
           b.importance - a.importance ||
-          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+          new Date(b.createdAt).getTime() -
+          new Date(a.createdAt).getTime()
       );
       setProjects(sortedData);
     };

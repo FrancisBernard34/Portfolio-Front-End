@@ -9,6 +9,7 @@ import { deleteProject } from "../actions/deleteProject";
 import { Project } from "@/types/project";
 import { AppWindowMac, CircleX } from "lucide-react";
 import { createProject } from "../actions/createProject";
+import EditProject from "./components/EditProject";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -100,6 +101,7 @@ const availableTechnologies = [
 function Projects({ currentSection }: { currentSection: Section }) {
   const [projects, setProjects] = useState<Project[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [editingProject, setEditingProject] = useState<Project | null>(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -143,6 +145,14 @@ function Projects({ currentSection }: { currentSection: Section }) {
     }
   }
 
+  const handleEditClick = (project: Project) => {
+    setEditingProject(project);
+  };
+
+  const handleCloseEdit = () => {
+    setEditingProject(null);
+  };
+
   return (
     <div
       className={
@@ -167,7 +177,7 @@ function Projects({ currentSection }: { currentSection: Section }) {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 3xl:grid-cols-4 gap-8">
         {filteredProjects.map((project) => (
           <div
             key={project.id}
@@ -219,6 +229,7 @@ function Projects({ currentSection }: { currentSection: Section }) {
 
               <div className="flex gap-4 text-sm sm:text-base">
                 <button
+                  onClick={() => handleEditClick(project)}
                   className="flex-1 text-center px-4 py-2 rounded-md bg-[#f47e00] text-[#1E1E1E] 
                         hover:bg-[#b75f00] transition-colors terminal-text"
                 >
@@ -236,6 +247,15 @@ function Projects({ currentSection }: { currentSection: Section }) {
           </div>
         ))}
       </div>
+
+      {/* Edit Project Modal */}
+      {editingProject && (
+        <EditProject
+          isOpen={!!editingProject}
+          onClose={handleCloseEdit}
+          project={editingProject}
+        />
+      )}
     </div>
   );
 }
@@ -593,7 +613,7 @@ export default function Dashboard() {
           </button>
         </nav>
       </aside>
-      <section className="w-[85%] bg-[#2d2d2d] flex flex-col p-8 gap-4 rounded-2xl overflow-y-auto">
+      <section className="w-[85%] bg-[#1E1E1E] flex flex-col p-8 gap-4 rounded-2xl overflow-y-auto">
         <Projects currentSection={currentSection} />
         <CreateProject currentSection={currentSection} />
       </section>
