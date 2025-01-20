@@ -9,7 +9,7 @@ import { deleteProject } from "../actions/deleteProject";
 import { Project } from "@/types/project";
 import { AppWindowMac, CircleX } from "lucide-react";
 import { createProject } from "../actions/createProject";
-import EditProject from "./components/EditProject";
+import EditProject from "../../components/EditProject";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -594,15 +594,15 @@ export default function Dashboard() {
           <div className="flex flex-col items-start gap-4">
             <button
               onClick={() => setCurrentSection("projects")}
-              className="text-white bg-[#000000]/30 p-4 hover:bg-[#000000]/50 transition-colors duration-300 rounded-md"
+              className="text-white bg-[#1E1E1E]/90 p-4 hover:bg-[#000000]/50 transition-colors duration-300 rounded-md"
             >
               See all projects
             </button>
             <button
               onClick={() => setCurrentSection("create-project")}
-              className="text-white bg-[#000000]/30 p-4 hover:bg-[#000000]/50 transition-colors duration-300 rounded-md"
+              className="text-white bg-[#1E1E1E]/90 p-4 hover:bg-[#000000]/50 transition-colors duration-300 rounded-md"
             >
-              Create a new project
+              Create a project
             </button>
           </div>
           <button
@@ -613,7 +613,7 @@ export default function Dashboard() {
           </button>
         </nav>
       </aside>
-      <section className="w-[85%] bg-[#1E1E1E] flex flex-col p-8 gap-4 rounded-2xl overflow-y-auto">
+      <section className="w-[85%] bg-[#171717] flex flex-col p-8 gap-4 rounded-2xl overflow-y-auto">
         <Projects currentSection={currentSection} />
         <CreateProject currentSection={currentSection} />
       </section>

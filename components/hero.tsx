@@ -230,7 +230,7 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Navigation Menu - Moved outside the section */}
+      {/* Navigation Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.nav
