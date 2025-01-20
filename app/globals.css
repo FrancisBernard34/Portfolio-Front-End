@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --light_orange: rgba(211, 95, 12, 0.9);
+  --light_orange: #f47e00;
   --orange: #d35f0c;
   --dark: #1e1e1e;
 }
@@ -157,7 +157,7 @@
 }
 
 .floating-circle {
-  @apply absolute rounded-full bg-[#D35F0C]/20 pointer-events-none;
+  @apply absolute rounded-full bg-[#f47e00]/20 pointer-events-none;
 }
 
 .floating-circle-1 {

@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#D35F0C]/90 text-[#1E1E1E] py-20"
+      className="min-h-screen bg-[#f47e00] text-[#1E1E1E] py-20"
     >
       <div className="container mx-auto px-8 sm:px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 terminal-text text-white">Contact_Me</h2>
@@ -24,7 +24,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
-                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#D35F0C]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
+                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
                 placeholder="Enter your name"
               />
             </div>
@@ -38,7 +38,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
-                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#D35F0C]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
+                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
                 placeholder="Enter your email"
               />
             </div>
@@ -52,7 +52,7 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows={6}
-                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#D35F0C]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
+                className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
                 placeholder="Enter your message"
               />
             </div>

@@ -12,7 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         orange: "var(--orange)",
-        light_orange: "rgba(211, 95, 12, 0.9)"
+        light_orange: "var(--light_orange)"
       },
       screens: {
         'sm-min': '480px',

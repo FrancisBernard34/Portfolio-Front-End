@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-center justify-center bg-[#D35F0C]/90 text-[#1E1E1E] py-20"
+      className="min-h-screen flex flex-col items-center justify-center bg-[#f47e00] text-[#1E1E1E] py-20"
     >
       <div className="w-full lg:container mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 pl-4 lg-max:pl-0 terminal-text text-white">

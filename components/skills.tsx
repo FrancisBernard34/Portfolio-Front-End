@@ -24,62 +24,62 @@ interface Skill {
 const skills: Skill[] = [
   {
     name: "Next.js",
-    icon: <SiNextdotjs className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiNextdotjs className="w-12 h-12 text-[#f47e00]" />,
     description: "React framework for production-grade applications",
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiTypescript className="w-12 h-12 text-[#f47e00]" />,
     description: "Strongly typed programming language for JavaScript",
   },
   {
     name: "NestJS",
-    icon: <SiNestjs className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiNestjs className="w-12 h-12 text-[#f47e00]" />,
     description: "Progressive Node.js framework for scalable applications",
   },
   {
     name: "MongoDB",
-    icon: <SiMongodb className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiMongodb className="w-12 h-12 text-[#f47e00]" />,
     description: "NoSQL database for modern applications",
   },
   {
     name: "Tailwind CSS",
-    icon: <SiTailwindcss className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiTailwindcss className="w-12 h-12 text-[#f47e00]" />,
     description: "Utility-first CSS framework",
   },
   {
     name: "React",
-    icon: <SiReact className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiReact className="w-12 h-12 text-[#f47e00]" />,
     description: "JavaScript library for building user interfaces",
   },
   {
     name: "Node.js",
-    icon: <SiNodedotjs className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiNodedotjs className="w-12 h-12 text-[#f47e00]" />,
     description: "JavaScript runtime for server-side development",
   },
   {
     name: "React Native",
-    icon: <DiReact className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <DiReact className="w-12 h-12 text-[#f47e00]" />,
     description: "Framework for building native mobile applications",
   },
   {
     name: "Expo",
-    icon: <SiExpo className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiExpo className="w-12 h-12 text-[#f47e00]" />,
     description: "Platform for universal React applications",
   },
   {
     name: "PostgreSQL",
-    icon: <SiPostgresql className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiPostgresql className="w-12 h-12 text-[#f47e00]" />,
     description: "Advanced open-source relational database",
   },
   {
     name: "Git",
-    icon: <SiGit className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiGit className="w-12 h-12 text-[#f47e00]" />,
     description: "Distributed version control system",
   },
   {
     name: "Docker",
-    icon: <SiDocker className="w-12 h-12 text-[#D35F0C]" />,
+    icon: <SiDocker className="w-12 h-12 text-[#f47e00]" />,
     description: "Platform for developing and deploying applications",
   },
 ];
@@ -108,7 +108,7 @@ export default function Skills() {
         <div className="flex justify-center mt-12">
           <Link
             href="/skills"
-            className="bg-[#D35F0C] text-white px-8 py-3 rounded-lg hover:bg-[#D35F0C]/90 transition-colors duration-300 font-semibold text-lg"
+            className="bg-[#f47e00] text-white px-8 py-3 rounded-lg hover:bg-[#b75f00] transition-colors duration-300 font-semibold text-lg"
           >
             See All Skills →
           </Link>

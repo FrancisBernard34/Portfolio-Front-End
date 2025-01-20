@@ -37,7 +37,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-[#1E1E1E] text-[#D35F0C] py-20"
+      className="min-h-screen bg-[#1E1E1E] text-[#f47e00] py-20"
     >
       <div className="container mx-auto px-8">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 terminal-text text-white">
@@ -53,8 +53,8 @@ export default function Projects() {
               className={`px-4 text-sm sm:text-base py-2 rounded-md terminal-text transition-colors
                 ${
                   selectedCategory === category
-                    ? "bg-[#D35F0C] text-[#1E1E1E]"
-                    : "border border-[#D35F0C] text-[#D35F0C] hover:bg-[#D35F0C] hover:text-[#1E1E1E]"
+                    ? "bg-[#f47e00] text-[#1E1E1E]"
+                    : "border border-[#f47e00] text-[#f47e00] hover:bg-[#de780b] hover:text-[#1E1E1E]"
                 }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -67,13 +67,13 @@ export default function Projects() {
             <div
               key={project.id}
               className={`relative flex flex-col border-2 ${
-                project.featured ? "border-[#D35F0C]" : "border-gray-600"
+                project.featured ? "border-[#f47e00]" : "border-gray-600"
               } 
                 rounded-lg h-[70vh] overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl
                 bg-[#2A2A2A] group`}
             >
               {project.featured && (
-                <div className="absolute top-4 right-4 bg-[#D35F0C] text-[#1E1E1E] px-3 py-1 rounded-full terminal-text z-10">
+                <div className="absolute top-4 right-4 bg-[#f47e00] text-[#1E1E1E] px-3 py-1 rounded-full terminal-text z-10">
                   Featured
                 </div>
               )}
@@ -104,7 +104,7 @@ export default function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="text-xs sm:text-sm px-3 py-1 rounded-full bg-[#3A3A3A] text-[#D35F0C] terminal-text"
+                        className="text-xs sm:text-sm px-3 py-1 rounded-full bg-[#3A3A3A] text-[#f47e00] terminal-text"
                       >
                         {tech}
                       </span>
@@ -118,8 +118,8 @@ export default function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-4 py-2 rounded-md bg-[#D35F0C] text-[#1E1E1E] 
-                        hover:bg-[#FF7B1C] transition-colors terminal-text"
+                      className="flex-1 text-center px-4 py-2 rounded-md bg-[#f47e00] text-[#1E1E1E] 
+                        hover:bg-[#b75f00] transition-colors terminal-text"
                     >
                       Live Demo
                     </Link>
@@ -129,8 +129,8 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-4 py-2 rounded-md border border-[#D35F0C] 
-                        text-[#D35F0C] hover:bg-[#D35F0C] hover:text-[#1E1E1E] transition-colors terminal-text"
+                      className="flex-1 text-center px-4 py-2 rounded-md border border-[#f47e00] 
+                        text-[#f47e00] hover:bg-[#de780b] hover:text-[#1E1E1E] transition-colors terminal-text"
                     >
                       View Code
                     </Link>
