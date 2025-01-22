@@ -1,0 +1,22 @@
+{
+  "Error": {
+    "description": "<p>Nós encontramos um erro.</p><p>Você pode tentar <retry>recarregar a página</retry> que você estava visitando.</p>",
+    "title": "Algo deu errado!"
+  },
+  "LocaleLayout": {
+    "title": "Portfólio",
+    "description": "Portfólio de Francis Bernard"
+  },
+  "NotFound": {
+    "title": "Página não encontrada"
+  },
+  "LocaleSwitcher": {
+    "label": "Mudar idioma",
+    "locale": "{locale}"
+  },
+  "Hero": {
+    "subtitle-1": "Desenvolvedor",
+    "subtitle-2": "Full-Stack",
+    "button-text": "Iniciar"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Error": {
+    "description": "<p>Hemos encontrado un error.</p><p>Puedes intentar <retry>recargar la página</retry> que estabas visitando.</p>",
+    "title": "¡Algo salió mal!"
+  },
+  "LocaleLayout": {
+    "title": "Portafolio",
+    "description": "Portafolio de Francis Bernard"
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale}"
+  },
+  "NotFound": {
+    "title": "Página no encontrada"
+  },
+  "Hero": {
+    "subtitle-1": "Desarrollador",
+    "subtitle-2": "Full-Stack",
+    "button-text": "Empezar"
+  },
+  "About": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador full-stack con más de 4 años de experiencia en el desarrollo de aplicaciones web. Me especializo en el desarrollo de aplicaciones web modernas y escalables."
+  }
+}

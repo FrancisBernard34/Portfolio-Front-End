@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 type NavItem = {
   href: string;
@@ -17,6 +18,7 @@ const navItems: NavItem[] = [
 ];
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -208,12 +210,12 @@ export default function Hero() {
           >
             <div className="flex justify-end pr-4 sm-min:pr-6 sm:pr-8">
               <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
-                <span className="text-[#292929]">Full-Stack</span>
+                <span className="text-[#292929]">{t("subtitle-1")}</span>
               </h2>
             </div>
             <div className="flex justify-start pl-4 sm-min:pl-6 sm:pl-8">
               <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
-                <span className="text-light_orange">Developer</span>
+                <span className="text-light_orange">{t("subtitle-2")}</span>
               </h2>
             </div>
           </motion.div>
@@ -225,7 +227,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
           >
-            Press Start
+            {t("button-text")}
           </motion.button>
         </div>
       </section>
