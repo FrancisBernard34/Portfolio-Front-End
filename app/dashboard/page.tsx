@@ -10,6 +10,7 @@ import { Project } from "@/types/project";
 import { AppWindowMac, CircleX } from "lucide-react";
 import { createProject } from "../actions/createProject";
 import EditProject from "../../components/EditProject";
+import { availableTechnologies } from "../lib/constants";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -43,60 +44,6 @@ type State = {
   };
   data?: Project;
 };
-
-const availableTechnologies = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "React Native",
-  "Expo",
-  "Redux",
-  "Zustand",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Tailwind CSS",
-  "SASS",
-  "Styled Components",
-  "Bootstrap",
-  "Axios",
-  "Flutter",
-  "WordPress",
-  "Node.js",
-  "NestJS",
-  "Express",
-  "Flask",
-  "Python",
-  "Java",
-  "C#",
-  "C",
-  "MongoDB",
-  "PostgreSQL",
-  "MySQL",
-  "SQLite",
-  "Prisma",
-  "Sequelize",
-  "Docker",
-  "Git",
-  "GitHub",
-  "CI/CD",
-  "AWS",
-  "Vercel",
-  "Netlify",
-  "Render",
-  "Figma",
-  "UI/UX",
-  "Canva",
-  "Photoshop",
-  "Premiere Pro",
-  "After Effects",
-  "Adobe XD",
-  "Jest",
-  "Insomnia",
-  "Postman",
-  "Unity",
-  "Godot",
-];
 
 function Projects({ currentSection }: { currentSection: Section }) {
   const [projects, setProjects] = useState<Project[]>([]);
