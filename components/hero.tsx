@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
-
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 type NavItem = {
   href: string;
   label: string;
@@ -154,20 +154,25 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Menu Button */}
-        {!isMenuOpen && (
-          <button
-            onClick={handleMenuToggle}
-            className="absolute top-8 right-8 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-lg z-40"
-            aria-expanded={isMenuOpen}
-            aria-controls="navigation-menu"
-            aria-label="Open menu"
-          >
-            <div className="torn-paper-menu p-2">
-              <Menu size={28} />
-            </div>
-          </button>
-        )}
+        {/* Navigation Controls */}
+        <div className="absolute top-8 right-8 flex items-center gap-4 z-[60]">
+          <div className="relative z-[65]">
+            <LocaleSwitcher />
+          </div>
+          {!isMenuOpen && (
+            <button
+              onClick={handleMenuToggle}
+              className="focus:outline-none focus:ring-2 focus:ring-light_orange rounded-lg relative z-[60]"
+              aria-expanded={isMenuOpen}
+              aria-controls="navigation-menu"
+              aria-label="Open menu"
+            >
+              <div className="torn-paper-menu p-2">
+                <Menu size={28} />
+              </div>
+            </button>
+          )}
+        </div>
 
         {/* Main Content */}
         <div className="h-full flex flex-col items-center justify-center relative pb-12 sm-min:pb-0" role="banner">
@@ -237,7 +242,7 @@ export default function Hero() {
         {isMenuOpen && (
           <motion.nav
             id="navigation-menu"
-            className="fixed top-0 left-0 right-0 bottom-0 bg-[#1E1E1E]/95 z-[9999] flex items-center justify-center"
+            className="fixed top-0 left-0 right-0 bottom-0 bg-[#1E1E1E]/95 z-[100] flex items-center justify-center"
             role="dialog"
             aria-modal="true"
             aria-label="Site navigation"

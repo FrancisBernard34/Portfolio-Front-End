@@ -3,7 +3,6 @@ import { Space_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
-import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -22,7 +21,6 @@ export default async function BaseLayout({ children, locale }: Props) {
     <html className="h-full" lang={locale}>
       <body className={clsx(spaceMono.className, "flex h-full flex-col")}>
         <NextIntlClientProvider messages={messages}>
-          <LocaleSwitcher />
           {children}
         </NextIntlClientProvider>
       </body>

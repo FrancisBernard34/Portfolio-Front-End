@@ -1,49 +1,30 @@
-'use client';
+"use client";
 
-import clsx from "clsx";
-import { useParams } from "next/navigation";
-import {ChangeEvent, ReactNode, useTransition} from "react";
-import {Locale, usePathname, useRouter} from '@/i18n/routing'
+import { FaChevronDown } from "react-icons/fa";
 
 type Props = {
-  children: ReactNode;
   defaultValue: string;
   label: string;
-}
+  onToggle: () => void;
+  isOpen: boolean;
+};
 
-export default function LocaleSwitcherSelect({children, defaultValue, label}: Props) {
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
-  const params = useParams();
-  const pathname = usePathname();
-
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value as Locale;
-    startTransition(() => {
-      router.replace(
-        // @ts-expect-error -- TypeScript will validate that only known `params`
-        // are used in combination with a given `pathname`. Since the two will
-        // always match for the current route, we can skip runtime checks.
-        {pathname, params},
-        {locale: nextLocale}
-      )
-    })
-  }
-
+export default function LocaleSwitcherSelect({
+  defaultValue,
+  label,
+  onToggle,
+  isOpen,
+}: Props) {
   return (
-    <label className={clsx(
-      'relative text-gray-400',
-      isPending && 'transition-opacity [&:disabled]:opacity-30'
-    )}>
+    <button
+      className="inline-flex items-center gap-1 rounded-md border border-light_orange px-3 py-2 text-sm text-gray-700 hover:bg-light_orange/10 focus:outline-none focus:ring-2 focus:ring-light_orange transition-colors"
+      onClick={onToggle}
+      aria-haspopup="listbox"
+      aria-expanded={isOpen}
+    >
       <p className="sr-only">{label}</p>
-      <select className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
-      defaultValue={defaultValue}
-      onChange={onSelectChange}
-      disabled={isPending}
-      >
-        {children}
-      </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
-    </label>
-  )
+      <span>{defaultValue}</span>
+      <FaChevronDown className={`transition-transform text-light_orange ${isOpen ? 'rotate-180' : ''}`} />
+    </button>
+  );
 }
