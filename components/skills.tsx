@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -21,74 +22,80 @@ interface Skill {
   description: string;
 }
 
-const skills: Skill[] = [
-  {
-    name: "Next.js",
-    icon: <SiNextdotjs className="w-12 h-12 text-[#f47e00]" />,
-    description: "React framework for production-grade applications",
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript className="w-12 h-12 text-[#f47e00]" />,
-    description: "Strongly typed programming language for JavaScript",
-  },
-  {
-    name: "NestJS",
-    icon: <SiNestjs className="w-12 h-12 text-[#f47e00]" />,
-    description: "Progressive Node.js framework for scalable applications",
-  },
-  {
-    name: "MongoDB",
-    icon: <SiMongodb className="w-12 h-12 text-[#f47e00]" />,
-    description: "NoSQL database for modern applications",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss className="w-12 h-12 text-[#f47e00]" />,
-    description: "Utility-first CSS framework",
-  },
-  {
-    name: "React",
-    icon: <SiReact className="w-12 h-12 text-[#f47e00]" />,
-    description: "JavaScript library for building user interfaces",
-  },
-  {
-    name: "Node.js",
-    icon: <SiNodedotjs className="w-12 h-12 text-[#f47e00]" />,
-    description: "JavaScript runtime for server-side development",
-  },
-  {
-    name: "React Native",
-    icon: <DiReact className="w-12 h-12 text-[#f47e00]" />,
-    description: "Framework for building native mobile applications",
-  },
-  {
-    name: "Expo",
-    icon: <SiExpo className="w-12 h-12 text-[#f47e00]" />,
-    description: "Platform for universal React applications",
-  },
-  {
-    name: "PostgreSQL",
-    icon: <SiPostgresql className="w-12 h-12 text-[#f47e00]" />,
-    description: "Advanced open-source relational database",
-  },
-  {
-    name: "Git",
-    icon: <SiGit className="w-12 h-12 text-[#f47e00]" />,
-    description: "Distributed version control system",
-  },
-  {
-    name: "Docker",
-    icon: <SiDocker className="w-12 h-12 text-[#f47e00]" />,
-    description: "Platform for developing and deploying applications",
-  },
-];
+
 
 export default function Skills() {
+  const t = useTranslations("Skills");
+
+  const skills: Skill[] = [
+    {
+      name: "Next.js",
+      icon: <SiNextdotjs className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.nextjs"),
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.typescript"),
+    },
+    {
+      name: "NestJS",
+      icon: <SiNestjs className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.nestjs"),
+    },
+    {
+      name: "MongoDB",
+      icon: <SiMongodb className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.mongodb"),
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.tailwind-css"),
+    },
+    {
+      name: "React",
+      icon: <SiReact className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.react"),
+    },
+    {
+      name: "Node.js",
+      icon: <SiNodedotjs className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.nodejs"),
+    },
+    {
+      name: "React Native",
+      icon: <DiReact className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.react-native"),
+    },
+    {
+      name: "Expo",
+      icon: <SiExpo className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.expo"),
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.postgresql"),
+    },
+    {
+      name: "Git",
+      icon: <SiGit className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.git"),
+    },
+    {
+      name: "Docker",
+      icon: <SiDocker className="w-12 h-12 text-[#f47e00]" />,
+      description: t("skills-page.skills.descriptions.docker"),
+    },
+  ];
+
   return (
     <section id="skills" className="min-h-screen bg-[#1E1E1E] text-white py-20">
       <div className="container mx-auto px-8 sm-min:px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 terminal-text">Skills_</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 terminal-text">
+          {t("title")}
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
             <div
@@ -110,7 +117,7 @@ export default function Skills() {
             href="/skills"
             className="bg-[#f47e00] text-white px-8 py-3 rounded-lg hover:bg-[#b75f00] transition-colors duration-300 font-semibold text-lg"
           >
-            See All Skills →
+            {t("see-all")}
           </Link>
         </div>
       </div>

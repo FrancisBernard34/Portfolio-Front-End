@@ -5,7 +5,7 @@ import { useEffect, useActionState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { loginUser } from "../actions/loginUser";
+import { loginUser } from "@/app/actions/loginUser";
 import { useRouter } from "next/navigation";
 
 // Submit Button Component with pending state

@@ -5,8 +5,10 @@ import { getProjects } from "@/app/actions/getProjects";
 import { Project } from "@/types/project";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Projects() {
+  const t = useTranslations("Projects");
   const [projects, setProjects] = useState<Project[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
@@ -47,7 +49,7 @@ export default function Projects() {
     >
       <div className="container mx-auto px-8">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 terminal-text text-white">
-          Projects_
+          {t("title")}
         </h2>
 
         {/* Category Filter */}

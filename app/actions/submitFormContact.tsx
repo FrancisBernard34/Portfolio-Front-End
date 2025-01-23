@@ -1,12 +1,7 @@
 "use server";
 
 import { z } from "zod";
-
-const ContactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
+import { getTranslations } from "next-intl/server";
 
 type ContactResponse = {
   message: string;
@@ -26,6 +21,14 @@ type State = {
 };
 
 export async function handleContactFormSubmit(_: State, formData: FormData): Promise<State> {
+  const t = await getTranslations('Contact');
+
+  const ContactSchema = z.object({
+    name: z.string().min(2, t('form.name.error')),
+    email: z.string().email(t('form.email.error')),
+    message: z.string().min(10, t('form.message.error')),
+  });
+
   const validatedFields = ContactSchema.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),

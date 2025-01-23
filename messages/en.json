@@ -12,11 +12,134 @@
     "locale": "{locale}"
   },
   "NotFound": {
-    "title": "Page not found"
+    "title": "Page not found",
+    "button-text": "← Go back to the homepage"
   },
   "Hero": {
     "subtitle-1": "Full-Stack",
     "subtitle-2": "Developer",
-    "button-text": "Press Start"
+    "button-text": "Press Start",
+    "header-menu": {
+      "menu-open-label": "Open menu",
+      "menu-close-label": "Close menu",
+      "menu-option-1": "Projects",
+      "menu-option-2": "About",
+      "menu-option-3": "Skills",
+      "menu-option-4": "Contact"
+    }
+  },
+  "Projects": {
+    "title": "Projects_"
+  },
+  "About": {
+    "title": "About_me",
+    "description-1": "Hello! I'm <span>Francis Bernard</span>, as you might have guessed from the big flashy title above. My journey in <span>programming</span> began in <span>2020</span>, exploring various domains including <span>game development</span> and <span>mobile applications</span>.",
+    "description-2": "Along the way, I discovered my passion for <span>web development</span>, which led me to specialize in this field. Now, I'm a dedicated <span>full-stack developer</span>, driven by the challenge of crafting elegant solutions for complex problems.",
+    "description-3": "Currently, I specialize in modern, scalable web application development, using technologies like <span>React</span>, <span>Next.js</span>, <span>Tailwind CSS</span> and <span>TypeScript</span>.",
+    "description-4": "When I'm not coding, you can find me playing the <span>guitar</span>, reading a good <span>book</span> or immersing myself in <span>video games</span>."
+  },
+  "Skills": {
+    "title": "Skills_",
+    "see-all": "See All Skills →",
+    "skills-page": {
+      "title": "All_Skills",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "devops": "DevOps",
+        "design": "Design",
+        "testing": "Testing",
+        "game-engines": "Game Engines"
+      },
+      "skills": {
+        "descriptions": {
+          "nextjs": "React framework for production-grade applications",
+          "react": "JavaScript library for building user interfaces",
+          "typescript": "Strongly typed programming language for JavaScript",
+          "react-native": "Framework for building native mobile applications",
+          "expo": "Platform for universal React applications",
+          "redux": "State management library for JavaScript applications",
+          "zustand": "Simple state management solution",
+          "html": "Standard markup language for web pages",
+          "css": "Style sheet language for web documents",
+          "javascript": "Programming language for web development",
+          "tailwind-css": "Utility-first CSS framework",
+          "sass": "CSS preprocessor scripting language",
+          "styled-components": "CSS-in-JS styling solution",
+          "bootstrap": "Popular CSS framework",
+          "axios": "Promise-based HTTP client",
+          "flutter": "UI toolkit for building natively compiled applications",
+          "wordpress": "Content management system for web development",
+          "nodejs": "JavaScript runtime for server-side development",
+          "nestjs": "Progressive Node.js framework for scalable applications",
+          "express": "Fast, unopinionated web framework for Node.js",
+          "flask": "Lightweight WSGI web application framework in Python",
+          "python": "High-level programming language",
+          "java": "Object-oriented programming language",
+          "c#": "Modern object-oriented programming language",
+          "c": "General-purpose programming language",
+          "mongodb": "NoSQL database for modern applications",
+          "postgresql": "Advanced open-source relational database",
+          "mysql": "Popular open-source relational database",
+          "sqlite": "Lightweight relational database system",
+          "prisma": "Next-generation Node.js and TypeScript ORM",
+          "sequelize": "Promise-based Node.js ORM",
+          "docker": "Platform for developing and deploying applications",
+          "git": "Distributed version control system",
+          "github": "Web-based hosting service for version control",
+          "ci/cd": "Continuous Integration and Continuous Deployment",
+          "aws": "Cloud computing platform",
+          "vercel": "Platform for frontend frameworks and static sites",
+          "netlify": "Platform for automated deployment",
+          "render": "Cloud application hosting platform",
+          "figma": "Collaborative interface design tool",
+          "ui/ux": "User Interface and User Experience Design",
+          "canva": "Online design and publishing tool",
+          "photoshop": "Image editing and manipulation software",
+          "premiere-pro": "Video editing software",
+          "after-effects": "Motion graphics and visual effects software",
+          "adobe-xd": "Vector-based user experience design tool",
+          "jest": "JavaScript testing framework",
+          "insomnia": "REST and GraphQL API client",
+          "postman": "API development and testing platform",
+          "unity": "Cross-platform game engine",
+          "godot": "Open-source game engine"
+        }
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact_me",
+    "form": {
+      "error-message": "Please fill in all fields correctly and try again.",
+      "name": {
+        "label": "Name_",
+        "placeholder": "Enter your name",
+        "error": "Name must be at least 2 characters"
+      },
+      "email": {
+        "label": "Email_",
+        "placeholder": "Enter your email",
+        "error": "Please enter a valid email address"
+      },
+      "message": {
+        "label": "Message_",
+        "placeholder": "Enter your message",
+        "error": "Message must be at least 10 characters"
+      },
+      "button": {
+        "label": "Send_Message"
+      }
+    }
+  },
+  "SuccessSubmission": {
+    "title": "Success_Submission",
+    "description": "Your message has been sent successfully.",
+    "button-text": "Go back to the homepage"
+  },
+  "Hungry": {
+    "title": "I'm Hungry",
+    "button-text": "I'm satisfied"
   }
 }

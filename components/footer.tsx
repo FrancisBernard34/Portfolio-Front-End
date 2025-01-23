@@ -3,7 +3,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
               <ul className="text-sm space-y-3 terminal-text">
                 <li className="flex items-center gap-2">
                   <a
-                    href="/blog"
+                    href="#"
                     className="text-white/40 hover:text-white/40 transition-colors pointer-events-none"
                     tabIndex={-1}
                     aria-label="Blog coming soon"
@@ -67,7 +67,7 @@ export default function Footer() {
                 </li>
                 <li className="flex md:flex-row flex-col items-start gap-2">
                   <a
-                    href="/learning"
+                    href="#"
                     className="text-white/40 hover:text-white/40 transition-colors pointer-events-none"
                     tabIndex={-1}
                     aria-label="Learning platform coming soon"

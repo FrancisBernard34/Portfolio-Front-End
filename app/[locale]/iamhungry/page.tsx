@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import Hero from '@/components/hero';
 import About from '@/components/about';
 import Skills from '@/components/skills';
@@ -25,8 +26,12 @@ interface TornSpot {
 }
 
 export default function HungryPage() {
+  const t = useTranslations('Hungry');
   const [tornSpots, setTornSpots] = useState<TornSpot[]>([]);
   const router = useRouter();
+  console.log(t('button-text'));
+  console.log(t('button-text'));
+  console.log(t('button-text'));
 
   const generateIrregularities = useCallback(() => {
     return Array.from({ length: 16 }, () => Math.random() * 30 - 15);
@@ -157,7 +162,7 @@ export default function HungryPage() {
         className="fixed bottom-6 right-6 z-[9999] px-6 py-3 bg-[#D35F0C] text-white terminal-text rounded-lg hover:bg-[#D35F0C]/80 transition-colors cursor"
         aria-label="Return to main page"
       >
-        I&apos;m_Satisfied
+        {t('button-text')}
       </button>
     </main>
   );

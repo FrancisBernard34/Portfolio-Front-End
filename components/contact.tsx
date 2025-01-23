@@ -3,10 +3,12 @@
 import { useActionState, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { handleContactFormSubmit } from "../app/actions/submitFormContact";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const SubmitButton = () => {
   const { pending } = useFormStatus();
+  const t = useTranslations('Contact');
   return (
     <button
       type="submit"
@@ -15,7 +17,7 @@ const SubmitButton = () => {
         pending ? "opacity-70 cursor-not-allowed" : ""
       }`}
     >
-      {pending ? "Loading" : "Send_Message"}
+      {pending ? "Loading" : t('form.button.label')}
     </button>
   );
 };
@@ -39,6 +41,7 @@ type State = {
 
 export default function Contact() {
   const router = useRouter();
+  const t = useTranslations('Contact');
 
   const initialState: State = {
     status: "idle",
@@ -63,7 +66,7 @@ export default function Contact() {
     >
       <div className="container mx-auto px-8 sm:px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 terminal-text text-white">
-          Contact_Me
+          {t('title')}
         </h2>
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg w-full lg:max-w-[70%] xl:max-w-[50%] mx-auto relative overflow-hidden">
           {/* Floating Circles */}
@@ -76,7 +79,7 @@ export default function Contact() {
               {/* Error Messages */}
               {state?.status === "error" && (
                 <div className="p-3 rounded-lg bg-red-100 border border-red-300 text-red-500 text-sm terminal-text">
-                  {state.message || "Please solve the errors and try again."}
+                  {state.message || t('form.error-message')}
                 </div>
               )}
               <div>
@@ -84,14 +87,14 @@ export default function Contact() {
                   htmlFor="name"
                   className="block text-base sm:text-xl mb-2 terminal-text text-[#1E1E1E]"
                 >
-                  Name_
+                  {t('form.name.label')}
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
-                  placeholder="Enter your name"
+                  placeholder={t('form.name.placeholder')}
                 />
                 {state?.errors?.name && (
                   <div className="text-red-500 text-sm terminal-text">
@@ -104,14 +107,14 @@ export default function Contact() {
                   htmlFor="email"
                   className="block text-base sm:text-xl mb-2 terminal-text text-[#1E1E1E]"
                 >
-                  Email_
+                  {t('form.email.label')}
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
-                  placeholder="Enter your email"
+                  placeholder={t('form.email.placeholder')}
                 />
                 {state?.errors?.email && (
                   <div className="text-red-500 text-sm terminal-text">
@@ -124,14 +127,14 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-base sm:text-xl mb-2 terminal-text text-[#1E1E1E]"
                 >
-                  Message_
+                  {t('form.message.label')}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={6}
                   className="w-full p-4 text-sm sm:text-base rounded-xl bg-[#f47e00]/30 text-[#1E1E1E] terminal-text focus:outline-none placeholder:text-[#636262]"
-                  placeholder="Enter your message"
+                  placeholder={t('form.message.placeholder')}
                 />
                 {state?.errors?.message && (
                   <div className="text-red-500 text-sm terminal-text">

@@ -10,15 +10,16 @@ type NavItem = {
   label: string;
 };
 
-const navItems: NavItem[] = [
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
-];
-
 export default function Hero() {
   const t = useTranslations("Hero");
+
+  const navItems: NavItem[] = [
+    { href: "#projects", label: t("header-menu.menu-option-1") },
+    { href: "#about", label: t("header-menu.menu-option-2") },
+    { href: "#skills", label: t("header-menu.menu-option-3") },
+    { href: "#contact", label: t("header-menu.menu-option-4") },
+  ];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -165,7 +166,7 @@ export default function Hero() {
               className="focus:outline-none focus:ring-2 focus:ring-light_orange rounded-lg relative z-[60]"
               aria-expanded={isMenuOpen}
               aria-controls="navigation-menu"
-              aria-label="Open menu"
+              aria-label={t("header-menu.menu-open-label")}
             >
               <div className="torn-paper-menu p-2">
                 <Menu size={28} />
@@ -254,7 +255,7 @@ export default function Hero() {
             <button
               onClick={handleMenuToggle}
               className="absolute top-8 right-8 focus:outline-none focus:ring-2 focus:ring-[#D35F0C] rounded-lg"
-              aria-label="Close menu"
+              aria-label={t("header-menu.menu-close-label")}
             >
               <div className="torn-paper p-2">
                 <X size={28} className="text-light_orange" />

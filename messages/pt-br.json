@@ -8,7 +8,8 @@
     "description": "Portfólio de Francis Bernard"
   },
   "NotFound": {
-    "title": "Página não encontrada"
+    "title": "Página não encontrada",
+    "button-text": "← Voltar para página inicial"
   },
   "LocaleSwitcher": {
     "label": "Mudar idioma",
@@ -17,6 +18,128 @@
   "Hero": {
     "subtitle-1": "Desenvolvedor",
     "subtitle-2": "Full-Stack",
-    "button-text": "Iniciar"
+    "button-text": "Iniciar",
+    "header-menu": {
+      "menu-open-label": "Abrir menu",
+      "menu-close-label": "Fechar menu",
+      "menu-option-1": "Projetos",
+      "menu-option-2": "Sobre",
+      "menu-option-3": "Habilidades",
+      "menu-option-4": "Contato"
+    }
+  },
+  "Projects": {
+    "title": "Projetos_"
+  },
+  "About": {
+    "title": "Sobre_",
+    "description-1": "Olá! Eu sou <span>Francis Bernard</span>, como você pode ter adivinhado pelo título chamativo acima. Minha jornada na <span>programação</span> começou em <span>2020</span>, explorando vários domínios, incluindo <span>desenvolvimento de jogos</span> e <span>aplicativos móveis</span>.",
+    "description-2": "Ao longo do caminho, descobri minha paixão pelo <span>desenvolvimento web</span>, que me levou a especializar-me nesta área. Agora, sou um desenvolvedor <span>full-stack</span>, dedicado ao desafio de criar soluções elegantes para problemas complexos.",
+    "description-3": "Atualmente, me especializo em <span>Next.js</span>, <span>TypeScript</span>, <span>Nest</span>, <span>MongoDB</span> e <span>Tailwind CSS</span> para criar <span>aplicativos web responsivos e de alto desempenho</span>.",
+    "description-4": "Quando não estou programando, você pode me encontrar tocando <span>guitarra</span>, lendo um bom <span>livro</span> ou mergulhando em <span>video-games</span>."
+  },
+  "Skills": {
+    "title": "Habilidades_",
+    "see-all": "Ver todas as habilidades →",
+    "skills-page": {
+      "title": "Todas_Habilidades",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Banco de Dados",
+        "devops": "DevOps",
+        "design": "Design",
+        "testing": "Testes",
+        "game-engines": "Engines de Jogos"
+      },
+      "skills": {
+        "descriptions": {
+          "nextjs": "Framework React para aplicações de nível de produção",
+          "react": "Biblioteca JavaScript para construção de interfaces de usuário",
+          "typescript": "Linguagem de programação fortemente tipada para JavaScript",
+          "react-native": "Framework para construção de aplicações móveis nativas",
+          "expo": "Plataforma para aplicações universais em React",
+          "redux": "Biblioteca de gerenciamento de estado para aplicações JavaScript",
+          "zustand": "Solução simples de gerenciamento de estado",
+          "html": "Linguagem de marcação padrão para páginas da web",
+          "css": "Linguagem de folha de estilo para documentos da web",
+          "javascript": "Linguagem de programação para desenvolvimento web",
+          "tailwind-css": "Framework CSS utilitário",
+          "sass": "Linguagem de script de pré-processador CSS",
+          "styled-components": "Solução de estilização CSS-in-JS",
+          "bootstrap": "Framework CSS popular",
+          "axios": "Cliente HTTP baseado em promises",
+          "flutter": "Kit de ferramentas de UI para construção de aplicações nativamente compiladas",
+          "wordpress": "Sistema de gerenciamento de conteúdo para desenvolvimento web",
+          "nodejs": "Runtime JavaScript para desenvolvimento no lado do servidor",
+          "nestjs": "Framework progressivo de Node.js para aplicações escaláveis",
+          "express": "Framework web para Node.js",
+          "flask": "Framework de aplicação web WSGI em Python",
+          "python": "Linguagem de programação de alto nível",
+          "java": "Linguagem de programação orientada a objetos",
+          "c#": "Linguagem de programação orientada a objetos moderna",
+          "c": "Linguagem de programação de propósito geral",
+          "mongodb": "Banco de dados NoSQL para aplicações modernas",
+          "postgresql": "Banco de dados relacional open-source avançado",
+          "mysql": "Banco de dados relacional open-source popular",
+          "sqlite": "Sistema de banco de dados relacional leve e local",
+          "prisma": "ORM para Node.js e TypeScript",
+          "sequelize": "ORM baseado em promises para Node.js",
+          "docker": "Plataforma para desenvolvimento e implantação de aplicações",
+          "git": "Sistema de controle de versão distribuído",
+          "github": "Serviço de hospedagem baseado na web para controle de versão",
+          "ci/cd": "Integração Contínua e Implantação Contínua",
+          "aws": "Plataforma de computação em nuvem",
+          "vercel": "Plataforma para frameworks de frontend e sites estáticos",
+          "netlify": "Plataforma para implantação automatizada",
+          "render": "Plataforma de hospedagem de aplicações em nuvem",
+          "figma": "Ferramenta de design de interface colaborativa",
+          "ui/ux": "Design de Interface de Usuário e Experiência do Usuário",
+          "canva": "Ferramenta de design e publicação online",
+          "photoshop": "Software de edição e manipulação de imagens",
+          "premiere-pro": "Software de edição de vídeo",
+          "after-effects": "Software de criação de gráficos, animações e efeitos visuais",
+          "adobe-xd": "Ferramenta de design de experiência do usuário baseada em vetores",
+          "jest": "Framework de teste para JavaScript",
+          "insomnia": "Cliente para APIs REST e GraphQL",
+          "postman": "Plataforma de desenvolvimento e teste de APIs",
+          "unity": "Motor de jogo multiplataforma",
+          "godot": "Motor de jogo open-source"
+        }
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contato_",
+    "form": {
+      "error-message": "Por favor, preencha todos os campos corretamente e tente novamente.",
+      "name": {
+        "label": "Nome_",
+        "placeholder": "Digite seu nome",
+        "error": "O nome deve ter pelo menos 2 caracteres"
+      },
+      "email": {
+        "label": "Email_",
+        "placeholder": "Digite seu email",
+        "error": "Por favor, insira um endereço de email válido"
+      },
+      "message": {
+        "label": "Mensagem_",
+        "placeholder": "Digite sua mensagem",
+        "error": "A mensagem deve ter pelo menos 10 caracteres"
+      },
+      "button": {
+        "label": "Enviar_Mensagem"
+      }
+    }
+  },
+  "SuccessSubmission": {
+    "title": "Mensagem enviada com sucesso!",
+    "description": "Sua mensagem foi enviada com sucesso.",
+    "button-text": "Voltar para a página principal"
+  },
+  "Hungry": {
+    "title": "Tô com fome!",
+    "button-text": "Tô satisfeito!"
   }
 }
