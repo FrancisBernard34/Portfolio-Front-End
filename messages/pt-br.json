@@ -37,9 +37,9 @@
   },
   "About": {
     "title": "Sobre_",
-    "description-1": "Olá! Eu sou <span>Francis Bernard</span>, como você pode ter adivinhado pelo título chamativo acima. Minha jornada na <span>programação</span> começou em <span>2020</span>, explorando vários domínios, incluindo <span>desenvolvimento de jogos</span> e <span>aplicativos móveis</span>.",
-    "description-2": "Ao longo do caminho, descobri minha paixão pelo <span>desenvolvimento web</span>, que me levou a especializar-me nesta área. Agora, sou um desenvolvedor <span>full-stack</span>, dedicado ao desafio de criar soluções elegantes para problemas complexos.",
-    "description-3": "Atualmente, me especializo em <span>Next.js</span>, <span>TypeScript</span>, <span>Nest</span>, <span>MongoDB</span> e <span>Tailwind CSS</span> para criar <span>aplicativos web responsivos e de alto desempenho</span>.",
+    "description-1": "Olá! Eu me chamo <span>Francis Bernard</span>, como você já deve ter adivinhado pelo título chamativo acima. Eu comecei minha jornada na <span>programação</span> em <span>2020</span>, explorando várias áreas, incluindo <span>desenvolvimento de jogos</span> e <span>aplicações mobile</span>.",
+    "description-2": "Ao longo do caminho, descobri minha paixão pelo <span>desenvolvimento web</span>, que me levou a se especializar nesta área. Agora, sou um desenvolvedor <span>full-stack</span>, dedicado ao desafio de criar soluções elegantes para problemas complexos.",
+    "description-3": "Atualmente, me especializo em <span>Next.js</span>, <span>TypeScript</span>, <span>Nest</span>, <span>MongoDB</span> e <span>Tailwind CSS</span> para criar <span>aplicações web responsivas e de alto desempenho</span>.",
     "description-4": "Quando não estou programando, você pode me encontrar tocando <span>guitarra</span>, lendo um bom <span>livro</span> ou mergulhando em <span>video-games</span>."
   },
   "Skills": {
