@@ -417,7 +417,7 @@ export default async function SkillsPage({params}: {params: Promise<{locale: Loc
             href="/#skills"
             className="text-[#f47e00] hover:text-[#b75f00] text-base sm:text-lg transition-colors"
           >
-            ← Back
+            {t("back-button")}
           </Link>
         </div>
 

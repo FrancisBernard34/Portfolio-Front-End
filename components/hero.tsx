@@ -214,12 +214,12 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
           >
-            <div className="flex justify-end pr-4 sm-min:pr-6 sm:pr-8">
+            <div className="flex justify-end pr-2 sm-min:pr-4 sm:pr-6 md:pr-8">
               <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
                 <span className="text-[#292929]">{t("subtitle-1")}</span>
               </h2>
             </div>
-            <div className="flex justify-start pl-4 sm-min:pl-6 sm:pl-8">
+            <div className="flex justify-start pl-3 sm-min:pl-4 sm:pl-6 md:pl-8">
               <h2 className="text-lg sm-min:text-xl sm:text-2xl md:text-4xl terminal-text">
                 <span className="text-light_orange">{t("subtitle-2")}</span>
               </h2>

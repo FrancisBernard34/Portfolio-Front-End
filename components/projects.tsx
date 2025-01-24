@@ -50,6 +50,7 @@ export default function Projects() {
       <div className="container mx-auto px-8">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 terminal-text text-white">
           {t("title")}
+          <span className="block sm-max:inline text-xs md:text-sm sm-max:ml-6 text-gray-500">{t("reminder")}</span>
         </h2>
 
         {/* Category Filter */}
@@ -82,7 +83,7 @@ export default function Projects() {
             >
               {project.featured && (
                 <div className="absolute top-4 right-4 bg-[#f47e00] text-[#1E1E1E] px-3 py-1 rounded-full terminal-text z-10">
-                  Featured
+                  {t("featured")}
                 </div>
               )}
 
@@ -129,7 +130,7 @@ export default function Projects() {
                       className="flex-1 text-center px-4 py-2 rounded-md bg-[#f47e00] text-[#1E1E1E] 
                         hover:bg-[#b75f00] transition-colors terminal-text"
                     >
-                      Live Demo
+                      {t("card-button-demo")}
                     </Link>
                   )}
                   {project.githubUrl && (
@@ -140,7 +141,7 @@ export default function Projects() {
                       className="flex-1 text-center px-4 py-2 rounded-md border border-[#f47e00] 
                         text-[#f47e00] hover:bg-[#de780b] hover:text-[#1E1E1E] transition-colors terminal-text"
                     >
-                      View Code
+                      {t("card-button-code")}
                     </Link>
                   )}
                 </div>

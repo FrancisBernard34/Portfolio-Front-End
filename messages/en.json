@@ -29,7 +29,11 @@
     }
   },
   "Projects": {
-    "title": "Projects_"
+    "title": "Projects_",
+    "reminder": "*for now only in English",
+    "featured": "Featured",
+    "card-button-demo": "Live Demo",
+    "card-button-code": "View Code"
   },
   "About": {
     "title": "About_me",
@@ -43,6 +47,7 @@
     "see-all": "See All Skills →",
     "skills-page": {
       "title": "All_Skills",
+      "back-button": "← Back",
       "categories": {
         "frontend": "Frontend",
         "backend": "Backend",
@@ -131,6 +136,31 @@
       "button": {
         "label": "Send_Message"
       }
+    }
+  },
+  "Footer": {
+    "bonus": {
+      "title": "Bonus_",
+      "description": "Eat_the_portfolio!",
+      "button-text": "Play"
+    },
+    "quick-links": {
+      "title": "Quick_Links",
+      "my-blog": {
+        "title": "My_Blog",
+        "label": "coming_soon"
+      },
+      "youtube-channel": {
+        "title": "My_Youtube_Channel"
+      },
+      "learning-platform": {
+        "title": "My_Learning_Platform",
+        "label": "coming_soon"
+      }
+    },
+    "contact": {
+      "title": "Connect_With_Me",
+      "email": "Email_" 
     }
   },
   "SuccessSubmission": {

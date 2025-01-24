@@ -10,5 +10,5 @@ export async function generateMetadata({params}: {params: Promise<{locale: Local
 }
 
 export default function HungryLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return children;
 }

@@ -16,7 +16,7 @@
     "button-text": "← Volver a la página de inicio"
   },
   "Hero": {
-    "subtitle-1": "Desarrollador",
+    "subtitle-1": "Programador",
     "subtitle-2": "Full-Stack",
     "button-text": "Empezar",
     "header-menu": {
@@ -29,7 +29,11 @@
     }
   },
   "Projects": {
-    "title": "Proyectos_"
+    "title": "Proyectos_",
+    "reminder": "*por ahora solo en ingles",
+    "featured": "Destacado",
+    "card-button-demo": "Demostración",
+    "card-button-code": "Ver Código"
   },
   "About": {
     "title": "Sobre_mí",
@@ -43,6 +47,7 @@
     "see-all": "Ver todas las habilidades →",
     "skills-page": {
       "title": "Todas_Habilidades",
+      "back-button": "← Volver",
       "categories": {
         "frontend": "Frontend",
         "backend": "Backend",
@@ -131,6 +136,31 @@
       "button": {
         "label": "Enviar_Mensaje"
       }
+    }
+  },
+  "Footer": {
+    "bonus": {
+      "title": "Bonus_",
+      "description": "¡Cómete_el_portafolio!",
+      "button-text": "Jugar"
+    },
+    "quick-links": {
+      "title": "Enlaces_Rápidos",
+      "my-blog": {
+        "title": "Mi_Blog",
+        "label": "próximamente"
+      },
+      "youtube-channel": {
+        "title": "Mi_Canal_de_Youtube"
+      },
+      "learning-platform": {
+        "title": "Mi_Plataforma_de_Aprendizaje",
+        "label": "próximamente"
+      }
+    },
+    "contact": {
+      "title": "Conéctate_Conmigo",
+      "email": "Correo_"
     }
   },
   "SuccessSubmission": {

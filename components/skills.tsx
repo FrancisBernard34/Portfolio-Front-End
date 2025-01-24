@@ -115,7 +115,7 @@ export default function Skills() {
         <div className="flex justify-center mt-12">
           <Link
             href="/skills"
-            className="bg-[#f47e00] text-white px-8 py-3 rounded-lg hover:bg-[#b75f00] transition-colors duration-300 font-semibold text-lg"
+            className="text-base sm:text-lg bg-[#f47e00] text-white px-8 py-3 rounded-lg hover:bg-[#b75f00] transition-colors duration-300 font-semibold"
           >
             {t("see-all")}
           </Link>

@@ -20,8 +20,9 @@ export default {
         'sm-max': '680px',
         'md': '820px',
         'lg': '1070px',
-        'lg-max': '1150px',
-        '3xl': '1720px'
+        'lg-max': '1170px',
+        '3xl': '1720px',
+        'footer-2xl': "1400px"
       },
     },
   },
