@@ -2,25 +2,26 @@ import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 import { verifyToken } from "./app/actions/verifyToken";
 import createMiddleware from "next-intl/middleware";
-import {routing} from './i18n/routing';
+import { routing } from "./i18n/routing";
 
 const i18nMiddleware = createMiddleware(routing);
 
 export default async function middleware(req: NextRequest) {
-  const response = i18nMiddleware(req);
-
-  if (response && !response.ok) {
-    return response;
+  if (
+    req.nextUrl.pathname === "/login" ||
+    req.nextUrl.pathname === "/dashboard"
+  ) {
+    return await authMiddleware(req);
   }
 
-  return await authMiddleware(req);
+  return i18nMiddleware(req);
 }
 
 async function authMiddleware(req: NextRequest) {
   const auth_token = req.cookies.get("auth_token");
   if (!auth_token && req.nextUrl.pathname === "/dashboard") {
     return NextResponse.redirect(new URL("/login", req.url));
-  } 
+  }
   if (!auth_token && req.nextUrl.pathname === "/login") {
     return NextResponse.next();
   }
@@ -38,5 +39,5 @@ async function authMiddleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/(en|pt-br|es)/:path*"],
+  matcher: ["/", "/(en|pt-br|es)/:path*", "/login", "/dashboard"],
 };
