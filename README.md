@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Zod-3068CE?style=for-the-badge&logo=zod&logoColor=white" alt="zod">
 </div>
 
-A modern, responsive portfolio website built with Next.js 13, TypeScript, and TailwindCSS. Features a beautiful UI with smooth animations, an admin dashboard for content management, and a responsive design that works across all devices.
+A modern and responsive portfolio website to showcase my projects, history, and experience. Features a beautiful UI with smooth animations, an admin dashboard for project management, and a responsive design that works across all devices.
 
 ## ✨ Features
 
@@ -50,24 +50,6 @@ A modern, responsive portfolio website built with Next.js 13, TypeScript, and Ta
 ### Authentication
 ![Login Page](https://i.ibb.co/sKKWnzp/login-page.png)
 
-## 🛠️ Tech Stack
-
-### Frontend
-- **Framework:** Next.js 13
-- **Language:** TypeScript
-- **Styling:** TailwindCSS
-- **Animation:** Framer Motion
-- **Form Validation:** Zod
-- **Icons:** Lucide React
-- **UI Components:** Shadcn/ui
-
-### Backend
-- **Framework:** NestJS
-- **Database:** PostgreSQL
-- **ORM:** Prisma
-- **Authentication:** JWT
-- **API Documentation:** Swagger
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -77,11 +59,11 @@ A modern, responsive portfolio website built with Next.js 13, TypeScript, and Ta
 
 ### Environment Variables
 
-Create a `.env` file in the root directory with the following variable:
+Rename the `.env.example` file to `.env` in the root directory and update it with the API url:
 
 ```bash
 # API URL
-API_URL="http://localhost:3000/api"  # Replace with your backend API URL in production
+API_URL="http://localhost:3001/api"  # Replace with your backend API URL
 ```
 
 ### Installation
@@ -140,14 +122,3 @@ For setting up the backend API, please visit the backend repository:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [TailwindCSS](https://tailwindcss.com)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Shadcn/ui](https://ui.shadcn.com/)
-- [Lucide React](https://lucide.dev/)
-- [NestJS](https://nestjs.com/)
-- [Prisma](https://www.prisma.io/)
-- [Zod](https://zod.dev/)
