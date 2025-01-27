@@ -1,6 +1,7 @@
 "use server"
 
 import React from "react";
+import BackToTop from "@/components/back-to-top";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -411,8 +412,8 @@ export default async function SkillsPage({params}: {params: Promise<{locale: Loc
   return (
     <main className="min-h-screen bg-[#1E1E1E] text-white py-20">
       <div className="container mx-auto px-8 sm-min:px-4">
-        <div className="flex items-center justify-between mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold terminal-text">{t("title")}</h1>
+        <div className="flex flex-col sm-min:flex-row gap-4 items-center justify-between mb-12">
+          <h1 className="text-2xl sm-min:text-3xl sm:text-4xl font-bold terminal-text">{t("title")}</h1>
           <Link
             href="/#skills"
             className="text-[#f47e00] hover:text-[#b75f00] text-base sm:text-lg transition-colors"
@@ -447,6 +448,7 @@ export default async function SkillsPage({params}: {params: Promise<{locale: Loc
           </div>
         ))}
       </div>
+      <BackToTop />
     </main>
   );
 } 
