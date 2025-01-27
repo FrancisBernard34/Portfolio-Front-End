@@ -8,7 +8,11 @@
   <img src="https://img.shields.io/badge/Zod-3068CE?style=for-the-badge&logo=zod&logoColor=white" alt="zod">
 </div>
 
+#
+
 A modern and responsive portfolio website to showcase my projects, history, and experience. Features a beautiful UI with smooth animations, an admin dashboard for project management, and a responsive design that works across all devices.
+
+#
 
 ## ✨ Features
 
