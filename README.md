@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript">
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind">
   <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="nestjs">
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="postgresql">
   <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="prisma">
   <img src="https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue" alt="framer">
   <img src="https://img.shields.io/badge/Zod-3068CE?style=for-the-badge&logo=zod&logoColor=white" alt="zod">
@@ -134,18 +133,6 @@ To access the admin dashboard:
 1. Navigate to `/login`
 2. Enter your admin credentials
 3. Access the dashboard at `/dashboard`
-
-## 🚀 Deployment
-
-### Frontend Deployment
-
-This project can be easily deployed on Vercel:
-
-1. Create a Vercel account
-2. Connect your GitHub repository
-3. Configure the environment variable:
-   - `API_URL`: Your production backend API URL
-4. Deploy!
 
 ### Backend Setup
 
