@@ -28,20 +28,6 @@ export default function Projects() {
     // fetchProjects();
     const fetchLocalProjects = () => {
       const data = LocalProjects as unknown as Project[];
-    // const fetchProjects = async () => {
-    //   const data = await getProjects();
-    //   // Sort projects by importance and date
-    //   const sortedData = data.sort(
-    //     (a, b) =>
-    //       b.importance - a.importance ||
-    //       new Date(b.createdAt).getTime() -
-    //       new Date(a.createdAt).getTime()
-    //   );
-    //   setProjects(sortedData);
-    // };
-    // fetchProjects();
-    const fetchLocalProjects = () => {
-      const data = LocalProjects as unknown as Project[];
       // Sort projects by importance and date
       const sortedData = data.sort(
         (a, b) =>
@@ -51,7 +37,6 @@ export default function Projects() {
       );
       setProjects(sortedData);
     };
-    fetchLocalProjects();
     fetchLocalProjects();
   }, []);
 
