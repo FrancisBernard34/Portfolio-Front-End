@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getProjects } from "@/app/actions/getProjects";
+// import { getProjects } from "@/app/actions/getProjects";
+import LocalProjects from "@/lib/projects.json"
 import { Project } from "@/types/project";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,8 +14,20 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      const data = await getProjects();
+    // const fetchProjects = async () => {
+    //   const data = await getProjects();
+    //   // Sort projects by importance and date
+    //   const sortedData = data.sort(
+    //     (a, b) =>
+    //       b.importance - a.importance ||
+    //       new Date(b.createdAt).getTime() -
+    //       new Date(a.createdAt).getTime()
+    //   );
+    //   setProjects(sortedData);
+    // };
+    // fetchProjects();
+    const fetchLocalProjects = () => {
+      const data = LocalProjects as unknown as Project[];
       // Sort projects by importance and date
       const sortedData = data.sort(
         (a, b) =>
@@ -24,7 +37,7 @@ export default function Projects() {
       );
       setProjects(sortedData);
     };
-    fetchProjects();
+    fetchLocalProjects();
   }, []);
 
   const categories = [
