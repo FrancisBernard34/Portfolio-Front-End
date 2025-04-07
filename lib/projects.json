@@ -1,0 +1,154 @@
+[
+  {
+    "id": "67906b71f798c08ca50642e3",
+    "title": "Tic-Tac-Toe Game",
+    "description": "A modern, responsive Tic-Tac-Toe game built with React and Redux, featuring an intelligent AI opponent with multiple difficulty levels and a beautiful dark/light theme toggle.",
+    "technologies": [
+      "React",
+      "Redux",
+      "SASS",
+      "Jest",
+      "JavaScript"
+    ],
+    "imageUrl": "https://i.ibb.co/vPKV9pX/image.png",
+    "liveUrl": "https://francisbernard34.github.io/tic-tac-toe-game/",
+    "githubUrl": "https://github.com/FrancisBernard34/tic-tac-toe-game",
+    "featured": true,
+    "importance": 4,
+    "category": "DEFAULT",
+    "createdAt": "2025-01-22T03:52:17.696Z",
+    "updatedAt": "2025-01-22T03:52:17.696Z"
+  },
+  {
+    "id": "679069c4f798c08ca50642e0",
+    "title": "Healthy - Diet App (WEB)",
+    "description": "Healthy is a web application built with Next.js, Tailwind CSS, and NextAuth. I've used the most up-to-date version of Next.js, taking advantage of Server Components and Server Actions to provide an optimized user experience.",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Zustand"
+    ],
+    "imageUrl": "https://i.ibb.co/VvZHsGT/Screenshot-2024-12-23-at-14-26-44.png",
+    "liveUrl": "https://healthy-diet-app.vercel.app/",
+    "githubUrl": "https://github.com/FrancisBernard34/Healthy-Diet-App",
+    "featured": true,
+    "importance": 3,
+    "category": "FULL_STACK",
+    "createdAt": "2025-01-22T03:45:08.848Z",
+    "updatedAt": "2025-01-22T03:45:08.848Z"
+  },
+  {
+    "id": "67906a05f798c08ca50642e1",
+    "title": "Saturno Notes - Front",
+    "description": "aturno Notes is a website for creating, organizing, and saving notes. It includes user authentication, note categorization with tags, and profile customization for photos and registration data.",
+    "technologies": [
+      "React",
+      "Styled Components",
+      "Axios"
+    ],
+    "imageUrl": "https://i.ibb.co/zXjnjR0/Home-Screen-Desktop.png",
+    "liveUrl": "https://saturnonotes.netlify.app/",
+    "githubUrl": "https://github.com/FrancisBernard34/saturno-notes-frontend",
+    "featured": true,
+    "importance": 3,
+    "category": "FRONT_END",
+    "createdAt": "2025-01-22T03:46:13.736Z",
+    "updatedAt": "2025-01-22T03:46:13.736Z"
+  },
+  {
+    "id": "67906a82f798c08ca50642e2",
+    "title": "Saturno Notes - API",
+    "description": "Saturno Notes is a website for creating, organizing, and saving notes. It includes user authentication, note categorization with tags, and profile customization for photos and registration data.",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "SQLite"
+    ],
+    "imageUrl": "https://i.ibb.co/hW6c1fT/Profile-Screen-Desktop.png",
+    "liveUrl": "https://saturnonotes.netlify.app/",
+    "githubUrl": "https://github.com/FrancisBernard34/saturno-notes-api",
+    "featured": true,
+    "importance": 3,
+    "category": "BACK_END",
+    "createdAt": "2025-01-22T03:48:18.324Z",
+    "updatedAt": "2025-01-22T03:48:18.324Z"
+  },
+  {
+    "id": "67977ce0bbca5ec3c702b2e8",
+    "title": "Portfolio - Front",
+    "description": "A modern and responsive portfolio website to showcase my projects, history, and experience. It features a beautiful UI with smooth animations and a responsive design that works on all devices.",
+    "technologies": [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "Shadcn",
+      "Zod"
+    ],
+    "imageUrl": "https://i.ibb.co/sF6RjZk/hero-section.png",
+    "liveUrl": "https://francisbernard.rivalrystudio.com.br",
+    "githubUrl": "https://github.com/FrancisBernard34/Portfolio-Front-End",
+    "featured": true,
+    "importance": 2,
+    "category": "FRONT_END",
+    "createdAt": "2025-01-27T12:32:32.378Z",
+    "updatedAt": "2025-01-27T12:33:44.745Z"
+  },
+  {
+    "id": "67977f6dbbca5ec3c702b2e9",
+    "title": "Portfolio - API",
+    "description": "A NestJS-based REST API for managing my portfolio projects. This backend service provides endpoints for creating, reading, updating, and deleting portfolio projects, as well as handling the portfolio contact form.",
+    "technologies": [
+      "Nest.js",
+      "TypeScript",
+      "MongoDB",
+      "Jest",
+      "Docker",
+      "AWS",
+      "Git"
+    ],
+    "imageUrl": "https://i.ibb.co/H78ZtZ0/dashboard-projects.png",
+    "liveUrl": "https://francisbernard.rivalrystudio.com.br",
+    "githubUrl": "https://github.com/FrancisBernard34/Portfolio-API",
+    "featured": true,
+    "importance": 2,
+    "category": "BACK_END",
+    "createdAt": "2025-01-27T12:43:25.366Z",
+    "updatedAt": "2025-01-27T12:43:25.366Z"
+  },
+  {
+    "id": "67976fb9bbca5ec3c702b2e6",
+    "title": "Manhattan-Coffee-House",
+    "description": "Landing page created using HTML and CSS as part of the Devmedia front-end course. ",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "imageUrl": "https://i.ibb.co/jh0rC7P/Screenshot-2025-01-27-at-08-35-17.png",
+    "liveUrl": "https://francisbernard34.github.io/Manhattan-Coffee-House/",
+    "githubUrl": "https://github.com/FrancisBernard34/Manhattan-Coffee-House",
+    "featured": false,
+    "importance": 1,
+    "category": "FRONT_END",
+    "createdAt": "2025-01-27T11:36:25.473Z",
+    "updatedAt": "2025-01-27T11:36:25.473Z"
+  },
+  {
+    "id": "6797772bbbca5ec3c702b2e7",
+    "title": "Curso Canva - Landing Page",
+    "description": "Landing Page created to promote an online course. It features an elegant and responsive design to capture the consumer's attention.",
+    "technologies": [
+      "Next.js",
+      "TailwindCSS"
+    ],
+    "imageUrl": "https://i.ibb.co/mR2K5kn/Screenshot-2025-01-27-at-09-02-26.png",
+    "liveUrl": "https://curso-canva-profissional.vercel.app/",
+    "githubUrl": "https://github.com/FrancisBernard34/curso-canva-landing-page",
+    "featured": false,
+    "importance": 1,
+    "category": "FRONT_END",
+    "createdAt": "2025-01-27T12:08:11.835Z",
+    "updatedAt": "2025-01-27T12:08:11.835Z"
+  }
+]
