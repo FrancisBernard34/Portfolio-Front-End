@@ -6,6 +6,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind">
   <img src="https://img.shields.io/badge/Framer_Motion-white?style=for-the-badge&logo=framer&logoColor=blue" alt="framer">
   <img src="https://img.shields.io/badge/Zod-3068CE?style=for-the-badge&logo=zod&logoColor=white" alt="zod">
+  <img src="https://github.com/FrancisBernard34/Portfolio-Front-End/actions/workflows/e2e.yml/badge.svg" alt="e2e tests">
 </div>
 
 #
