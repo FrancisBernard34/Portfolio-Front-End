@@ -6,9 +6,8 @@ import Contact from '@/components/contact'
 import BackToTop from '@/components/back-to-top'
 import Footer from '@/components/footer'
 import { setRequestLocale } from 'next-intl/server'
-import { Locale } from '@/types/locale'
 
-export default async function Home({params}: {params: Promise<{locale: Locale}>}) {
+export default async function Home({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   
   setRequestLocale(locale)

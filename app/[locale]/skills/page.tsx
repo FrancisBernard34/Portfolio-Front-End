@@ -52,7 +52,7 @@ import {
 import { DiJava, DiReact } from "react-icons/di";
 import { TbBrandCSharp, TbBrandFramerMotion } from "react-icons/tb";
 import { BsCodeSlash } from "react-icons/bs";
-import { Link, Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
@@ -63,7 +63,7 @@ interface Skill {
   category: string;
 }
 
-export async function generateMetadata({params}: {params: Promise<{locale: Locale}>}) {
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Skills'});
   return {
@@ -71,7 +71,7 @@ export async function generateMetadata({params}: {params: Promise<{locale: Local
   };
 }
 
-export default async function SkillsPage({params}: {params: Promise<{locale: Locale}>}) {
+export default async function SkillsPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale)
 
