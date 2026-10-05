@@ -1,5 +1,28 @@
 [
   {
+    "id": "68e2b7f1a1b2c3d4e5f67890",
+    "title": "Timelined",
+    "description": "A full-stack timeline planner for organizing recurring schedules across the year. Create a period per month, add tasks to days of the week, and see everything on an interactive, draggable timeline. Built on a REST API with request validation and end-to-end tests.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+      "Zod",
+      "Vitest",
+      "Playwright"
+    ],
+    "imageUrl": "/timelined.png",
+    "liveUrl": "https://timelined.vercel.app",
+    "githubUrl": "https://github.com/FrancisBernard34/timelined",
+    "featured": true,
+    "importance": 5,
+    "category": "FULL_STACK",
+    "createdAt": "2026-10-05T16:00:00.000Z",
+    "updatedAt": "2026-10-05T16:00:00.000Z"
+  },
+  {
     "id": "67906b71f798c08ca50642e3",
     "title": "Tic-Tac-Toe Game",
     "description": "A modern, responsive Tic-Tac-Toe game built with React and Redux, featuring an intelligent AI opponent with multiple difficulty levels and a beautiful dark/light theme toggle.",
